@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로젝트</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            color: black;
+            width: 100%;
+            display: inline-block;
+            /* position: fixed; */
+        }
+
+        header {
+            height: 100px;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            border-top: solid 2px rgb(255, 180, 41);
+            border-bottom: solid 2px rgb(255, 180, 41);
+        }
+
+        nav a {
+            color: black;
+            padding: 15px 60px;
+            margin: 0 20px;
+            width: 70px;
+            text-decoration: none;
+            text-align: center;
+            border: solid 3px rgb(255, 180, 41);
+            border-radius: 17px;
+        }
+
+        nav a:hover {
+            background-color: rgb(255, 180, 41);
+        }
+
+        .search-div{
+            position: absolute;
+            padding: 5px;
+            width: 4.6rem;
+            right: 280px;
+            top: 50px;
+        }
+
+        .slide-container{
+            max-width: 1000px;
+            position: relative;
+            margin: 20px auto;
+            border: solid 3px rgb(255, 180, 41);
+            border-radius: 30px;
+        }
+
+        .slideimg{
+            margin: 60px 110px;
+            display: none;
+        }
+
+        .prev, .next{
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next{
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover{
+            background-color: rgba(255, 180, 41, 0.3);
+        }
+        
+        .content {
+            padding: 20px;
+        }
+
+        .footer {
+            border-top:solid 2px rgb(255, 180, 41);
+            /* position: fixed; */
+            padding: 10px 0;
+            width: 100%;
+            height: 100px;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <header>
+            <h1>제목</h1>
+        </header>
+        <nav>
+            <a href="#home">홈</a>
+            <a href="#category">카테고리</a>
+            <a href="#bucket">장바구니</a>
+            <a href="#pay">결제하기</a>
+        </nav>
+        <div class="search-div">
+            <input type="text">
+            <button>검색</button>
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <div class="slideimg">
+            <img src="../img/bread1.jpg" width="780px" height="600px">
+        </div>
+        <div class="slideimg">
+            <img src="../img/cake1.jpg" width="780px" height="600px">
+        </div>
+        <div class="slideimg">
+            <img src="../img/salad1.jpg" width="780px" height="600px">
+        </div>
+        <div class="slideimg">
+            <img src="../img/macarong1.jpg" width="780px" height="600px">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+        <a class="next" onclick="plusSlides(1)">&#10095</a>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n){
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n){
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n){
+            let i;
+            let slides = document.getElementsByClassName("slideimg");
+            if(n > slides.length) {slideIndex = 1}
+            if(n < 1){slideIndex = slides.length}
+            for(i = 0; i < slides.length; i++){
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+        }
+
+        let autoSlideIndex = 0;
+        showAutoSlides();
+
+        function showAutoSlides(){
+            let i;
+            let autoSlides = document.getElementsByClassName("slideimg");
+            for(i = 0; i < autoSlides.length; i++){
+                autoSlides[i].style.display = "none";
+            }
+            autoSlideIndex++;
+            if(autoSlideIndex > autoSlides.length) {autoSlideIndex = 1}
+            autoSlides[autoSlideIndex-1].style.display = "block";
+            setTimeout(showAutoSlides, 3000);
+        }
+    </script>
+
+    <div class="content">
+        
+    </div>
+    <footer class="footer">
+        <p>상호명 : (주)뛰뛰빵빵 주소 : 대구시 </p>
+    </footer>
+</body>
+
+</html>
