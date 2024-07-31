@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>빵집이름</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+        * {
+            font-family: "Noto Sans KR", sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fff;
+        }
+
+        header {
+            background-color: #fff;
+            color: #333;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .site-title {
+            display: inline-block;
+            background-color: orange;
+            color: #fff;
+            border-radius: 10px;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        header input {
+            padding: 8px 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 200px;
+            font-size: 14px;
+        }
+        nav {
+            width: 1140px;
+            margin: 0 auto;
+        }
+
+        nav ul {
+            overflow: hidden;
+            list-style-type: none;
+            /* justify-content: center; */
+        }
+
+        nav ul li {
+            /* background-color: #333; */
+            float: left;
+            /* min-width: 280px; */
+            /* width: 280px; */
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            padding: 10px;
+            margin: 5em;
+            justify-content: center;
+        }
+
+        #horizontal-underline{
+            position: absolute;
+            width: 0;
+            background-color: #ffc353;
+            top: 0px;
+            left: 0px;
+            height: 4px;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        main img {
+            max-width: 50%;
+            display: block;
+            margin: auto;
+        }
+
+        a{
+            text-decoration: none;
+            color: #333;
+            font-size: 13px;
+        }
+
+        .list1 {
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        .list1 ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .list1 ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="site-title">
+            <h1>빵집이름</h1>
+        </div>
+        <div>
+            <input type="text" placeholder="검색어 입력">
+        </div>
+        <div>
+            <ul>
+                <li>로그인</li>
+                <li>회사소개</li>
+                <li>고객센터</li>
+            </ul>
+        </div>
+        <nav>
+            <div id="horizontal-underline"></div>
+            <ul>
+                <li><a href="#">제품 안내</a></li>
+                <li><a href="#">오프라인 매장</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">주문하기</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img src="../images/bread-5671124_1280.jpg">
+        <aside>
+        </aside>
+    </main>
+    <footer>
+        <div class="list1">
+            <ul>
+                <li><a href="">회사 소개</a></li>
+                <li><a href="">개인정보처리방침</a></li>
+                <li><a href="">이용약관</a></li>
+                <li><a href="">사이트맵</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
