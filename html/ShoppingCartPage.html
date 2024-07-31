@@ -22,13 +22,13 @@
 </script>
 </head>
 <body>
-    <div class="title-container">
+    <div class="t-title-container">
 
-        <h2 class="shoppingcart"><div class="square-box"></div>장바구니</h2>
+        <h2 class="t-shoppingcart"><div class="t-square-box"></div>장바구니</h2>
     </div>
-    <div class="order-box-main">
+    <div class="t-order-box-main">
     <div>
-        <ul class="category-box" class="my-checkbox">
+        <ul class="t-category-box" class="my-checkbox">
             <input type="checkbox">
             <li><b>상품[옵션]</b></li>
             <li><b>주문금액</b></li>
@@ -38,45 +38,45 @@
         </ul>
     </div>
     <div >
-        <ul class="order-line">
+        <ul class="t-order-line">
             <input type="checkbox" class="my-checkbox">
             <li>멜론빵</li>
             <li>2500원</li>
-            <li class="num-li">
-                <button class="num-button" type="button" onclick="decrement('num-jsc1')">-</button>
-                <input type="text" class="num-num" id="num-jsc1" value="1" readonly>
-                <button class="num-button" type="button" onclick="increment('num-jsc1')">+</button>
+            <li id="t-num-li">
+                <button class="t-num-button" type="button" onclick="decrement('num-jsc1')">-</button>
+                <input type="text" class="t-num-num" id="num-jsc1" value="1" readonly>
+                <button class="t-num-button" type="button" onclick="increment('num-jsc1')">+</button>
             </li>
             <li>2500원</li>
             <li>5000원</li>
         </ul>
-        <ul class="order-line1">
+        <ul class="t-order-line1">
             <input type="checkbox" class="my-checkbox">
             <li>소금빵</li>
             <li>3500원</li>
-            <li class="num-li">
-                <button class="num-button" type="button" onclick="decrement('num-jsc2')">-</button>
-                <input type="text" class="num-num" id="num-jsc2" value="1" readonly>
-                <button class="num-button" type="button" onclick="increment('num-jsc2')">+</button>
+            <li id="t-num-li">
+                <button class="t-num-button" type="button" onclick="decrement('num-jsc2')">-</button>
+                <input type="text" class="t-num-num" id="num-jsc2" value="1" readonly>
+                <button class="t-num-button" type="button" onclick="increment('num-jsc2')">+</button>
             </li>
             <li>3500원</li>
             <li>5000원</li>
         </ul>
-        <ul class="order-line2">
+        <ul class="t-order-line2">
             <input type="checkbox" class="my-checkbox">
             <li>블루베리 <br>케이크</li>
             <li>35000원</li>
-            <li class="num-li">
-                <button class="num-button" type="button" onclick="decrement('num-jsc3')">-</button>
-                <input type="text" class="num-num" id="num-jsc3" value="1" readonly>
-                <button class="num-button" type="button" onclick="increment('num-jsc3')">+</button>
+            <li id="t-num-li">
+                <button class="t-num-button" type="button" onclick="decrement('num-jsc3')">-</button>
+                <input type="text" class="t-num-num" id="num-jsc3" value="1" readonly>
+                <button class="t-num-button" type="button" onclick="increment('num-jsc3')">+</button>
             </li>
             <li>35000원</li>
             <li>5000원</li>
         </ul>
     </div>
 <div>
-    <ul class = "order-box">
+    <ul class = "t-order-box">
         <li> 주문 합계 : 41,000원</li>
         <h1>+</h1>
         <li> 배송비 : 5,000원</li>
@@ -86,16 +86,16 @@
     </ul>
 </div>
 </div>
-<div class="fixed-container">
+<div class="t-fixed-container">
     <ul>
         <li>선택삭제</li>
         <li>배송지역확인</br></li>
         <li>쇼핑계속하기</li>
         <li>전체주문</li>
-        <li>선택상품주문</li>
+        <li><a href="/html/ex02.html" class="">선택상품주문</a></li>
     </ul>
 </div>
-<div class="caution">
+<div class="t-caution">
     <h3>주문안내</h3>
     <p> - 당일배송 제품은 배송당일 오후 1시까지 주문과 결제를 완료 하셔야 정상적으로 배송됩니다.<br>
         - 1일 예약배송 제품은 배송 1일 전 오후 5시까지 주문과 결제를 완료 하셔야 정상적으로 배송됩니다.<br>
