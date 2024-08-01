@@ -35,6 +35,7 @@ li.item {
     height: 100%;
     overflow: hidden;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .item_img {

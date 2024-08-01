@@ -67,7 +67,7 @@ const productsData = {
       image: "../img/cake/1.jpg",
       description: "짜지 않는 고소함",
       kind: "Cake",
-      new: "item_new"
+      new: "item_new",
     },
     {
       name: "말차에 퐁당 딸기케이크",
@@ -474,7 +474,7 @@ export function renderProducts(categoryId) {
     productItemInfo.appendChild(productDescInfo);
     productItemInfo.appendChild(productKindInfo);
 
-    if(product.new) {
+    if (product.new) {
       const productNew = document.createElement("span");
       productNew.className = product.new;
       productItemInfo.appendChild(productNew);
@@ -545,10 +545,12 @@ function drawRecommendedProducts(renderProduct, productsData, categoryId) {
     itemWrap.appendChild(itemWrapATag);
 
     renderProduct.appendChild(itemWrap);
+
+    console.log(renderProduct);
   });
 }
 
-function eraseProducts(parent) {
+export function eraseProducts(parent) {
   while (parent.firstChild) {
     parent.removeChild(parent.firstChild);
   }

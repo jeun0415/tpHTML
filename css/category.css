@@ -8,6 +8,7 @@
   /* border: 1px solid #555; */
   overflow: hidden;
   margin-top: 10px;
+  box-sizing: border-box;
 }
 
 .menu_category {
@@ -28,7 +29,7 @@
   width: 100%;
   margin: 0;
   text-align: center;
-  overflow: hidden;
+  margin-left: -15px;
 }
 
 .menu_category_list a {
