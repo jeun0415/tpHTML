@@ -16,11 +16,17 @@
           align-items: center;
           margin-bottom: 20px;
           margin-left: 100px;
+          margin-bottom: 50px;
         }
 
         .c-head div {
           margin: 0;
           padding: 0;
+        }
+
+        .c-sec {
+          margin-top: 100px;
+          margin-bottom: 150px;
         }
 
         .c-payment,
@@ -41,41 +47,59 @@
           color: white;
         }
 
-        .c-group1,
-        .c-group2 {
-          margin: 10px;
+        .c-way{
+          margin: 0 70px 0 70px;
+        }
+
+        .c-line1{
+          border: 2px solid #d1cfca;
+          border-radius: 10px;
+          width: 500px;
           display: inline;
-          align-content: center;
+          padding: 30px;
         }
 
-        #c-ck1,
-        #c-ck2 {
+        [type="radio"],
+        span {
+          vertical-align: middle;
+        }
+
+        [type="radio"] {
+          vertical-align: middle;
+          appearance: none;
+          border: max(2px, 0.1em) solid gray;
+          border-radius: 50%;
+          width: 2em;
+          height: 2em;
+        }
+
+        [type="radio"]:checked {
+          border: 0.5em solid tomato;
+        }
+
+        [type="radio"]:focus-visible {
+          outline: max(2px, 0.1em) dotted tomato;
+          outline-offset: max(2px, 0.1em);
+        }
+
+        [type="radio"]:hover {
+          box-shadow: 0 0 0 max(4px, 0.2em) lightgray;
           cursor: pointer;
-          transform: scale(1.5);
         }
-
-        #c-lab1,
-        #c-lab2 {
+        
+        [type="radio"]:hover + span {
           cursor: pointer;
-          font-size: 1.2rem;
-          margin-right: 10px;
         }
 
-        .c-info {
-          list-style: none;
-          padding: 8px;
-        }
-
-        .c-info label {
-          display: block;
-          margin-bottom: 5px;
+        .c-info2, .c-info3{
+          display: inline;
         }
 
         .c-li,
         .c-li1,
         .c-li2 {
           list-style: none;
-          display: inline;
+          display: inline-block;
           padding: 0;
         }
 
@@ -83,9 +107,10 @@
           font-size: 20px;
           font-weight: 500;
           text-align: center;
+          resize: none;
+          border-radius: 10px;
         }
 
-        .c-tt1,
         .c-tt2 {
           resize: none;
           border-radius: 10px;

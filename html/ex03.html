@@ -5,27 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>뛰뛰빵빵</title>
-    <link rel="stylesheet" href="../css/ex02-2.css">
-    <link rel="stylesheet" href="../css/ShoppingCartPage은우님장바구용.css">
+    <link rel="stylesheet" href="../css/ex03.css">
+    <link rel="stylesheet" href="../css/ShoppingCartPage은우님장바구용2.css">
 </head>
 
 <body>
     <div id="c-container">
         <div class="c-first">
-            <div>
+            <div class="c-sec">
                 <h3 class="c-head">
                     <div class="t-square-box"></div>&nbsp;&nbsp;수령방법
                 </h3>
-                <div class="c-group1">
-                    <label for="c-ck1" id="c-lab1">배달</label>
-                    <input type="radio" name="gg" id="c-ck1" checked>
-                </div>
-                <div class="c-group2">
-                    <label for="c-ck2" id="c-lab2">포장</label>
-                    <input type="radio" name="gg" id="c-ck2">
+                <div class="c-line1">
+                    <label class="c-way">
+                        <input type="radio" name="way" checked />
+                        <span style="font-size: 20pt;">배달</span>
+                    </label>
+                    <label class="c-way">
+                        <input type="radio" name="way" />
+                        <span style="font-size: 20pt;">포장</span>
+                    </label>
                 </div>
             </div>
-            <div>
+            <div class="c-sec">
                 <h3 class="c-head">
                     <div class="t-square-box"></div>&nbsp;&nbsp;주문내역
                 </h3>
@@ -91,53 +93,56 @@
                 </div>
                 <button class="c-bn">장바구니로 돌아가기</button>
             </div>
-            <div>
+            <div class="c-sec">
                 <h3 class="c-head">
                     <div class="t-square-box"></div>&nbsp;&nbsp;배달주소
                 </h3>
+                <span>주소를 정확히 입력해주세요😊<br></span>
                 <textarea class="c-tt1" cols="60" rows="2" required></textarea>
             </div>
-            <div>
+            <div class="c-sec">
                 <h3 class="c-head">
                     <div class="t-square-box"></div>&nbsp;&nbsp;요청사항
                 </h3>
                 <ul>
                     <li class="c-li1">
-                        <label class="c-req" for="to-shop">뛰뛰빵빵에게 (최대 50자)</label>
-                        <textarea class="c-tt2" name="to-shop" cols="100" rows="4"></textarea>
+                        <span>뛰뛰빵빵에게 (최대 50자)<br></span>
+                        <textarea class="c-tt2" name="to-shop" cols="100" rows="4"></textarea><br><br>
                     </li>
                     <li class="c-li2">
-                        <label class="c-req" for="to-rider">라이더님께 (최대 50자)</label>
+                        <span>라이더님께 (최대 50자)<br></span>
                         <textarea class="c-tt2" name="to-rider" cols="100" rows="4"></textarea>
                     </li>
                 </ul>
             </div>
-            <div>
+            <div class="c-sec">
                 <h3 class="c-head">
                     <div class="t-square-box"></div>&nbsp;&nbsp;주문고객 정보
                 </h3>
                 <ul class="c-info2">
-                    <li class="c-info"><label for="">주문자 이름
-                            <input type="text" required></label></li>
-                    <li class="c-info"><label for="">핸드폰 번호</label>
-                        <select name="" id="">
-                            <option value="tel_1" selected>010</option>
-                            <option value="tel_1">011</option>
-                            <option value="tel_1">016</option>
-                            <option value="tel_1">017</option>
-                            <option value="tel_1">018</option>
-                            <option value="tel_1">019</option>
-                        </select>
+                    <li class="c-info"><span>주문자 이름
+                            <input type="text" required></span></li>
+                    <span>핸드폰 번호</span>
+                    <select name="" id="">
+                        <option value="tel_1" selected>010</option>
+                        <option value="tel_1">011</option>
+                        <option value="tel_1">016</option>
+                        <option value="tel_1">017</option>
+                        <option value="tel_1">018</option>
+                        <option value="tel_1">019</option>
+                    </select>
 
-                        - <input type="tel" size="1" maxlength="4" required></label>
-                        - <input type="tel" size="1" maxlength="4" required></label>
+                    - <input type="tel" size="1" maxlength="4" required></label>
+                    - <input type="tel" size="1" maxlength="4" required></label>
                     </li>
-                    <li class="c-info"><label for="">이메일
-                            <input type="email" required></label></li>
-                    <li class="c-info"><label for="">비밀번호
-                            <input type="password" required></label></li>
-                    <li class="c-info"><label for="">비밀번호 확인
-                            <input type="password" required></label></li>
+                </ul>
+                <ul class="c-info3">
+                    <li class="c-info"><span>이메일
+                            <input type="email" required></span></li>
+                    <li class="c-info"><span>비밀번호
+                            <input type="password" required></span></li>
+                    <li class="c-info"><span>비밀번호 확인
+                            <input type="password" required></span></li>
                 </ul>
             </div>
         </div>
@@ -248,7 +253,15 @@
                     </ul>
                 </div>
             </div>
-            <div class="c-pay4">주문금액 합계
+            <div class="c-pay4">
+                <ul class="t-order-box2" style="font-size: 14pt;">
+                    <li> 주문 합계 : 41,000원</li>
+                    <h1>+</h1>
+                    <li> 배송비 : 5,000원</li>
+                    <h1>=</h1>
+                    <li>총 주문금액 : </li>
+                    <h1>46,000원</h1>
+                </ul>
             </div>
             <div class="c-pay5">
                 <ul>
