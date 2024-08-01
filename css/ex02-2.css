@@ -7,18 +7,20 @@
         }
 
         #c-container {
-          width: 1000px;
+          width: 1200px;
           margin: auto;
-          padding: 10px;
         }
 
-        .c-fd {
-          /* border-color: #c9c9c9c9; */
+        .c-fd, .c-fd2 {
           margin: 120px;
           padding: 10px;
           display: flex;
           flex-direction: column;
           align-items: center;
+        }
+
+        .c-fd2{
+          padding: 26px;
         }
 
         .c-lgd {
@@ -38,10 +40,11 @@
           color: black;
           background-color: #ccc;
           display: inline;
+          margin: 20px;
         }
 
-        .c-a:hover {
-          background-color: black;
+        .c-a2:hover {
+          background-color: hwb(24 8% 0%);
           color: white;
         }
 
@@ -77,7 +80,7 @@
           margin-bottom: 5px;
         }
 
-        .c-li {
+        .c-li, .c-li1, .c-li2 {
           list-style: none;
           display: inline;
           padding: 0;
@@ -94,8 +97,29 @@
           border-radius: 10px;
         }
 
-        .c-pay1{
-          border: 1px solid black;
+        .c-pay1, .c-pay2, .c-pay3, .c-pay4, .c-pay5, .c-pay6, .c-pay7{
+          border: 1px solid #ccc;
+          margin: 40px;
+          padding: 20px;
+        }
+
+        #c-receipt{
+          border: 1px solid #ccc;
+          margin: 40px;
+          padding: 20px;
+        }
+
+        .c-prt1, .c-prt2{
+          cursor: pointer;
+        }
+
+        .c-a {
+          text-decoration: none;
+          color: black;
+          background-color: hsl(0, 0%, 89%);
+          display: inline;
+          margin: 20px;
+          padding: 0 5px 0 5px;
         }
 
         .c-btn {

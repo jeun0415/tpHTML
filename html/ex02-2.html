@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>뛰뛰빵빵</title>
-    <link rel="stylesheet" href="../css/ex02.css">
+    <link rel="stylesheet" href="../css/ex02-2.css">
 </head>
 
 <body>
@@ -32,14 +32,14 @@
                     <legend class="c-lgd">배달주소</legend>
                     <textarea class="c-tt1" cols="60" rows="2" required></textarea>
                 </fieldset>
-                <fieldset class="c-fd">
+                <fieldset class="c-fd2">
                     <legend class="c-lgd">요청사항</legend>
                     <ul>
-                        <li class="c-li">
+                        <li class="c-li1">
                             <label class="c-req" for="to-shop">뛰뛰빵빵에게 (최대 50자)</label>
                             <textarea class="c-tt2" name="to-shop" cols="100" rows="4"></textarea>
                         </li>
-                        <li class="c-li">
+                        <li class="c-li2">
                             <label class="c-req" for="to-rider">라이더님께 (최대 50자)</label>
                             <textarea class="c-tt2" name="to-rider" cols="100" rows="4"></textarea>
                         </li>
@@ -142,29 +142,29 @@
                             <li class="c-li">- 실시간 계좌이체는 은행별 이용시간이 다를 수 있습니다.</li>
                         </ul>
                     </div>
-                    <div id="receipt">
+                    <div id="c-receipt">
                         <ul>
                             <li class="c-li">현금영수증 신청
                                 <div>
-                                    <input type="radio" name="rr">발급
-                                    <input type="radio" name="rr" checked>미발급
+                                    <input class="c-prt1" type="radio" name="rr">발급
+                                    <input class="c-prt2" type="radio" name="rr" checked>미발급
                                 </div>
                             </li>
                         </ul>
-                        <ul>
-                            <li class="c-li">
-                                <input type="radio" name="aa" checked>소득공제용(일반 개인용)
-                            </li>
-                            <li class="c-li">
-                                <label for="">이름</label>
-                                <input type="text">
-                            </li>
-                            <li class="c-li">
-                                <label for="">휴대폰번호</label>
-                                <input type="text">
-                            </li>
-                            <input type="radio" name="aa">지출증빙용(사업자용)
+                        <div>
                             <ul>
+                                <input type="radio" name="aa" checked>소득공제용(일반 개인용)
+                                <li class="c-li">
+                                    <label for="">이름</label>
+                                    <input type="text">
+                                </li>
+                                <li class="c-li">
+                                    <label for="">휴대폰번호</label>
+                                    <input type="text">
+                                </li>
+                            </ul>
+                            <ul>
+                                <input type="radio" name="aa">지출증빙용(사업자용)
                                 <li class="c-li">
                                     <label for="">사업자명</label>
                                     <input type="text">
@@ -174,7 +174,7 @@
                                     <input type="text">
                                 </li>
                             </ul>
-                        </ul>
+                        </div>
                     </div>
                     <div class="c-pay4">주문금액 합계
                     </div>
@@ -263,7 +263,6 @@
             </div>
     </div>
     </form>
-    </div>
 </body>
 
 </html>
