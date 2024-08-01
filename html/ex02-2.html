@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>뛰뛰빵빵</title>
     <link rel="stylesheet" href="../css/ex02-2.css">
+    <link rel="stylesheet" href="../css/ShoppingCartPage은우님장바구용.css">
 </head>
 
 <body>
@@ -25,6 +26,66 @@
             </fieldset>
             <fieldset class="c-fd">
                 <legend class="c-lgd">주문내역</legend>
+                <div class="t-order-box-main">
+                    <div>
+                        <ul class="t-category-box">
+                            <input type="checkbox">
+                            <li><b>상품[옵션]</b></li>
+                            <li><b>주문금액</b></li>
+                            <li><b>수량</b></li>
+                            <li><b>합계</b></li>
+                            <li><b>배송비</b></li>
+                        </ul>
+                    </div>
+                    <div >
+                        <ul class="t-order-line">
+                            <input type="checkbox" class="my-checkbox">
+                            <li>멜론빵</li>
+                            <li>2500원</li>
+                            <li id="t-num-li">
+                                <button class="t-num-button" type="button" onclick="decrement('num-jsc1')">-</button>
+                                <input type="text" class="t-num-num" id="num-jsc1" value="1" readonly>
+                                <button class="t-num-button" type="button" onclick="increment('num-jsc1')">+</button>
+                            </li>
+                            <li>2500원</li>
+                            <li>5000원</li>
+                        </ul>
+                        <ul class="t-order-line">
+                            <input type="checkbox" class="my-checkbox">
+                            <li>소금빵</li>
+                            <li>3500원</li>
+                            <li id="t-num-li">
+                                <button class="t-num-button" type="button" onclick="decrement('num-jsc2')">-</button>
+                                <input type="text" class="t-num-num" id="num-jsc2" value="1" readonly>
+                                <button class="t-num-button" type="button" onclick="increment('num-jsc2')">+</button>
+                            </li>
+                            <li>3500원</li>
+                            <li>5000원</li>
+                        </ul>
+                        <ul class="t-order-line">
+                            <input type="checkbox" class="my-checkbox">
+                            <li>블루베리 <br>케이크</li>
+                            <li>35000원</li>
+                            <li id="t-num-li">
+                                <button class="t-num-button" type="button" onclick="decrement('num-jsc3')">-</button>
+                                <input type="text" class="t-num-num" id="num-jsc3" value="1" readonly>
+                                <button class="t-num-button" type="button" onclick="increment('num-jsc3')">+</button>
+                            </li>
+                            <li>35000원</li>
+                            <li>5000원</li>
+                        </ul>
+                    </div>
+                <div>
+                    <ul class = "t-order-box">
+                        <li> 주문 합계 : 41,000원</li>
+                        <h1>+</h1>
+                        <li> 배송비 : 5,000원</li>
+                        <h1>=</h1>
+                        <li>총 주문금액  : </li>
+                        <h1>46,000원</h1>
+                    </ul>
+                </div>
+                </div>
                 <button class="c-bn">장바구니로 돌아가기</button>
             </fieldset>
             <div>
