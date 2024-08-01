@@ -25,21 +25,21 @@ margin: auto;
     flex: 1;
 }
 .t-category-box{
-    background-color: #FFB429;
+    background-color: rgb(255, 200, 100);
     border: 2px solid #d1cfca;
     border-radius: 10px;
 
 }
 #t-num-li{
     display: inline-flex;
-    border: 1px solid #FFB429;
+    border: 1px solid rgb(255, 200, 100);
     border-radius: 5px;
     align-items: center;
     padding: 0; /* 패딩 제거 */
     justify-content: center; /* 버튼과 입력 필드 가운데 정렬 */
 }
 .t-num-button{
-    background-color: #FFB429;
+    background-color: rgb(255, 200, 100);
     cursor: pointer;
     border: none;
     padding: 5px 10px;
