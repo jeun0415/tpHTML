@@ -6,6 +6,12 @@
           padding: 0;
         }
 
+        #c-back {
+          background-color: hwb(0 95% 5%);
+          padding-top: 50px;
+          padding-bottom: 50px;
+        }
+
         #c-container {
           width: 1200px;
           margin: auto;
@@ -27,6 +33,31 @@
         .c-sec {
           margin-top: 100px;
           margin-bottom: 150px;
+          background-color: #fff;
+          padding-top: 50px;
+          padding-bottom: 100px;
+          border-radius: 5px;
+        }
+
+        .c-sec ul {
+          list-style: none;
+        }
+
+        #c-input {
+          width: ;
+          height: ;
+          padding: ;
+          border: 3px solid hsl(0, 0%, 63%);
+          background-color: #fff;
+          border-radius: 5px;
+          font-size: 16px;
+          outline: none;
+        }
+
+        #c-input:focus {
+          border-color: rgb(253, 245, 226);
+          background-color: rgb(253, 245, 226);
+          box-shadow: 0 0 8px hsla(44, 94%, 50%, 0.979);
         }
 
         .c-payment,
@@ -47,12 +78,12 @@
           color: white;
         }
 
-        .c-way{
+        .c-way {
           margin: 0 70px 0 70px;
         }
 
-        .c-line1{
-          border: 2px solid #d1cfca;
+        .c-line1 {
+          background-color: rgb(253, 245, 226);
           border-radius: 10px;
           width: 500px;
           display: inline;
@@ -86,12 +117,13 @@
           box-shadow: 0 0 0 max(4px, 0.2em) lightgray;
           cursor: pointer;
         }
-        
-        [type="radio"]:hover + span {
+
+        [type="radio"]:hover+span {
           cursor: pointer;
         }
 
-        .c-info2, .c-info3{
+        .c-info2,
+        .c-info3 {
           display: inline;
         }
 
@@ -121,11 +153,20 @@
         .c-pay3,
         .c-pay4,
         .c-pay5,
-        .c-pay6,
-        .c-pay7 {
+        .c-pay6
+        {
           border: 1px solid #ccc;
           margin: 40px;
-          padding: 20px;
+          padding: 20px 20px 30px 20px;
+          background-color: #fff;
+        }
+
+        .c-pay7{
+          border: 1px solid #ccc;
+          margin: 40px;
+          padding: 20px 20px 30px 20px;
+          background-color: #fff;
+          /* color: #303030; */
         }
 
         #c-receipt {
@@ -182,4 +223,43 @@
 
         .c-bn {
           cursor: pointer;
+        }
+
+        .c-top1{
+          margin-bottom: 20px;
+        }
+
+        .c-top2{
+          margin-top: 45px;
+          margin-bottom: 10px;
+        }
+
+        .c-top3{
+          margin-bottom: 10px;
+        }
+
+        .c-blank2{
+          margin-bottom: 30px;
+        }
+
+        .c-blank3{
+          margin-top: 30px;
+          margin-bottom: 10px;
+          font-size: 11pt;
+        }
+
+        .c-agr{
+          margin-top: 25px;
+        }
+
+        .c-agr2{
+          margin-bottom: 10px;
+        }
+
+        th{
+          padding: 5px 0 0 0;
+        }
+
+        td{
+          padding: 5px 20px 10px 20px;
         }
