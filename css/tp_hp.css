@@ -86,8 +86,8 @@
 .s-slide-container{
   max-width: 1000px;
   position: relative;
-  margin: 20px auto;
-  border: solid 3px rgb(255, 180, 41);
+  margin: 5px auto;
+  border: solid 2px rgb(255, 180, 41);
   border-radius: 30px;
 }
 
