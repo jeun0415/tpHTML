@@ -17,6 +17,7 @@ const productsData = {
       image: "../img/bread/3.jpg",
       description: "짜지 않는 고소함",
       kind: "Bread",
+      new: "item_new",
     },
     {
       name: "소금빵",
@@ -53,6 +54,7 @@ const productsData = {
       image: "../img/bread/9.jpg",
       description: "짜지 않는 고소함",
       kind: "Bread",
+      new: "item_new",
     },
     {
       name: "소금빵",
@@ -104,6 +106,7 @@ const productsData = {
       image: "../img/cake/7.jpg",
       description: "짜지 않는 고소함",
       kind: "Cake",
+      new: "item_new",
     },
     {
       name: "해피 복숭아 케이크",
@@ -142,6 +145,7 @@ const productsData = {
       image: "../img/dessert/3.jpg",
       description: "짜지 않는 고소함",
       kind: "Dessert",
+      new: "item_new",
     },
     {
       name: "소금빵",
@@ -172,6 +176,7 @@ const productsData = {
       image: "../img/dessert/8.jpg",
       description: "짜지 않는 고소함",
       kind: "Dessert",
+      new: "item_new",
     },
     {
       name: "소금빵",
@@ -210,6 +215,7 @@ const productsData = {
       image: "../img/sandwich/4.jpg",
       description: "짜지 않는 고소함",
       kind: "Sandwich",
+      new: "item_new",
     },
     {
       name: "소금빵",
@@ -228,6 +234,7 @@ const productsData = {
       image: "../img/sandwich/7.jpg",
       description: "짜지 않는 고소함",
       kind: "Sandwich",
+      new: "item_new",
     },
     {
       name: "소금빵",
@@ -429,13 +436,7 @@ export function renderRecommendedProducts(categoryId) {
 }
 
 export function renderProducts(categoryId) {
-  // 기존 컨텐츠 지우기
-  eraseProducts(productRender);
-
-  const products = productsData[categoryId];
-
-  products.forEach((product) => {
-    /*
+      /*
         product DOM structure
 
         li
@@ -447,47 +448,29 @@ export function renderProducts(categoryId) {
         ------ span         .txt_shape
         ------ span         .item_new
     */
-    const productItem = document.createElement("li");
-    productItem.className = "item";
+  
+  // 기존 컨텐츠 지우기
+  eraseProducts(productRender);
 
-    const productAItem = document.createElement("a");
+  const products = productsData[categoryId];
 
-    const productName = document.createElement("span");
-    productName.className = "item_text";
-    productName.textContent = product.name;
-    productItem.appendChild(productName);
+    // 템플릿 리터럴 사용하여 HTML 생성
+    const productHTML = products.map(product => `
+      <li class="item">
+        <a class="item_best">
+          <span class="item_text">${product.name}</span>
+          <img class="item_img" src="${product.image}" alt="${product.name}">
+          <span class="item_info">
+            <span class="name">${product.description}</span>
+            <span class="txt_shape">${product.kind}</span>
+            ${product.new ? `<span class="${product.new}"></span>` : ''}
+          </span>
+        </a>
+      </li>
+    `).join('');
 
-    const productImage = document.createElement("img");
-    productImage.className = "item_img";
-    productImage.src = product.image;
-    productItem.appendChild(productImage);
-
-    const productItemInfo = document.createElement("span");
-    productItemInfo.className = "item_info";
-    const productDescInfo = document.createElement("span");
-    productDescInfo.className = "name";
-    productDescInfo.textContent = product.description;
-    const productKindInfo = document.createElement("span");
-    productKindInfo.className = "txt_shape";
-    productKindInfo.textContent = product.kind;
-
-    productItemInfo.appendChild(productDescInfo);
-    productItemInfo.appendChild(productKindInfo);
-
-    if(product.new) {
-      const productNew = document.createElement("span");
-      productNew.className = product.new;
-      productItemInfo.appendChild(productNew);
-    }
-
-    productItem.appendChild(productItemInfo);
-
-    productAItem.appendChild(productName);
-    productAItem.appendChild(productImage);
-    productAItem.appendChild(productItemInfo);
-    productItem.appendChild(productAItem);
-    productRender.appendChild(productItem);
-  });
+  // DOM에 한 번에 추가
+  productRender.innerHTML = productHTML;
 
   // Longer text slice
   const itemTexts = document.querySelectorAll(".product_rendering .item_text");
@@ -515,37 +498,20 @@ function doTextSlice(element, maxWidth) {
 function drawRecommendedProducts(renderProduct, productsData, categoryId) {
   const products = productsData[categoryId];
 
-  products.forEach((product) => {
-    const itemWrap = document.createElement("li");
-    itemWrap.className = "recommended_item_wrap";
-
-    const itemWrapATag = document.createElement("a");
-    const itemSpanImg = document.createElement("span");
-    itemSpanImg.className = "img";
-    const itemImg = document.createElement("img");
-    itemImg.src = product.image;
-
-    const itemInfo = document.createElement("span");
-    itemInfo.className = "info";
-    const itemInfoName = document.createElement("span");
-    itemInfoName.className = "name";
-    itemInfoName.textContent = product.name;
-    const itemInfoKind = document.createElement("span");
-    itemInfoKind.className = "txt_shape";
-    itemInfoKind.textContent = product.kind;
-
-    itemInfo.appendChild(itemInfoName);
-    itemInfo.appendChild(itemInfoKind);
-
-    itemSpanImg.appendChild(itemImg);
-
-    itemWrapATag.appendChild(itemSpanImg);
-    itemWrapATag.appendChild(itemInfo);
-
-    itemWrap.appendChild(itemWrapATag);
-
-    renderProduct.appendChild(itemWrap);
-  });
+  const recommendedProductsHTML = products.map(product => `
+    <li class="recommended_item_wrap">
+      <a href="#"> <span class="img">
+          <img src="${product.image}" alt="${product.name}">
+        </span>
+        <span class="info">
+          <span class="name">${product.name}</span>
+          <span class="txt_shape">${product.kind}</span>
+        </span>
+      </a>
+    </li>
+  `).join('');
+  
+  renderProduct.innerHTML = recommendedProductsHTML;
 }
 
 function eraseProducts(parent) {
