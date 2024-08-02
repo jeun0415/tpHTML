@@ -147,6 +147,7 @@ margin: auto;
 .t-select-order li{
     padding: 20px; /* 각 항목에 여유 공간 추가 */
     border-radius: 30px;
+    border: 2px solid #FFB429;
     background-color: hwb(24 8% 0%) ; /* 배경색 설정 */
     text-align: center;
 }
