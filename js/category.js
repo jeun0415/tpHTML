@@ -23,8 +23,6 @@ function focusAfterClick(event) {
 
   product.renderRecommendedProducts(categoryId);
   product.renderProducts(categoryId);
-
-  console.log(categoryId);
 }
 
 for (let i = 0; i < categoryMenusList.length; i++) {
@@ -33,5 +31,3 @@ for (let i = 0; i < categoryMenusList.length; i++) {
 
 product.renderRecommendedProducts(1);
 product.renderProducts(1);
-
-console.log(document.querySelector(".product_rendering").innerHTML);
