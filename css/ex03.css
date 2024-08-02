@@ -153,12 +153,20 @@
         .c-pay3,
         .c-pay4,
         .c-pay5,
-        .c-pay6,
-        .c-pay7 {
+        .c-pay6
+        {
           border: 1px solid #ccc;
           margin: 40px;
           padding: 20px 20px 30px 20px;
           background-color: #fff;
+        }
+
+        .c-pay7{
+          border: 1px solid #ccc;
+          margin: 40px;
+          padding: 20px 20px 30px 20px;
+          background-color: #fff;
+          /* color: #303030; */
         }
 
         #c-receipt {
@@ -226,10 +234,32 @@
           margin-bottom: 10px;
         }
 
+        .c-top3{
+          margin-bottom: 10px;
+        }
+
+        .c-blank2{
+          margin-bottom: 30px;
+        }
+
+        .c-blank3{
+          margin-top: 30px;
+          margin-bottom: 10px;
+          font-size: 11pt;
+        }
+
         .c-agr{
           margin-top: 25px;
         }
 
         .c-agr2{
           margin-bottom: 10px;
+        }
+
+        th{
+          padding: 5px 0 0 0;
+        }
+
+        td{
+          padding: 5px 20px 10px 20px;
         }
