@@ -17,9 +17,7 @@ margin: auto;
     display: flex;
     width: 50%; /* 너비를 줄여서 좌우 여백 확보 */
     margin: auto; 
-    
 }
-
 .t-order-box-main li,.t-fixed-container li{
     margin: 10px;
     padding: 30px;
@@ -46,8 +44,6 @@ margin: auto;
     border-radius: 5px;
     align-items: center;
     padding: 0;
-    padding-left: 25px;
-    padding-right: 25px;
     justify-content: center; /* 버튼과 입력 필드 가운데 정렬 */
 }
 .t-num-button{
@@ -162,4 +158,33 @@ margin: auto;
     text-decoration: none;
     color: inherit;
     
+}
+.my-checkbox {
+    display: none;
+}
+
+/* 커스텀 체크박스 디자인 */
+.custom-checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #FFB429;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-checkbox:hover {
+    background-color: #FFB429;
+}
+
+/* 체크된 상태 */
+.my-checkbox:checked + .custom-checkbox {
+    background-color: #FFB429;
+    background-image: url('data:image/svg+xml,%3Csvg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M5 13L9 17L19 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: center;
 }

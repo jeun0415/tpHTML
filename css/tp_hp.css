@@ -26,12 +26,8 @@
 }
 
 .s-logoimg {
-  width: 110px;
-  height: 110px;
-  position: absolute;
-  top: 10px;
-  margin-left: 10px;
-  /* left: 310px; */
+  width: 100px;
+  height: 80px;
 }
 
 .s-nav {
