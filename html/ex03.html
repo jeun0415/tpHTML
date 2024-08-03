@@ -21,8 +21,8 @@
         <nav class="s-nav">
             <a href="tp_hp.html">홈</a>
             <a href="category.html">카테고리</a>
-            <a href="ShoppingCartPage.html">장바구니</a>
-            <a href="ex03.html">결제하기</a>
+            <a href="#bucket">장바구니</a>
+            <a href="#pay">결제하기</a>
         </nav>
         <div class="s-search-div">
             <input type="text" class="s-input" placeholder="제품을 검색해주세요">
@@ -146,30 +146,39 @@
                     <h3 class="c-head">
                         <div class="t-square-box"></div>&nbsp;&nbsp;주문고객 정보
                     </h3>
-                    <ul class="c-info2">
-                        <li class="c-info"><span>주문자 이름
-                                <input id="c-input" type="text" required></span></li>
-                        <span>핸드폰 번호</span>
-                        <select name="" id="c-input">
-                            <option value="tel_1" selected>010</option>
-                            <option value="tel_1">011</option>
-                            <option value="tel_1">016</option>
-                            <option value="tel_1">017</option>
-                            <option value="tel_1">018</option>
-                            <option value="tel_1">019</option>
-                        </select>
-
-                        - <input id="c-input" type="tel" size="1" maxlength="4" required></label>
-                        - <input id="c-input" type="tel" size="1" maxlength="4" required></label>
+                    
+                    <ul class="c-info info">
+                        <li class="c-info">
+                            <span>주문자 이름</span>
+                            <input id="c-input" type="text" required>
                         </li>
-                    </ul>
-                    <ul class="c-info3">
-                        <li class="c-info"><span>이메일
-                                <input id="c-input" type="email" required></span></li>
-                        <li class="c-info"><span>비밀번호
-                                <input id="c-input" type="password" required></span></li>
-                        <li class="c-info"><span>비밀번호 확인
-                                <input id="c-input" type="password" required></span></li>
+
+                        <li  class="c-info">
+                            <span>핸드폰 번호</span>
+                            <select name="" id="c-input">
+                                <option value="tel_1" selected>010</option>
+                                <option value="tel_1">011</option>
+                                <option value="tel_1">016</option>
+                                <option value="tel_1">017</option>
+                                <option value="tel_1">018</option>
+                                <option value="tel_1">019</option>
+                            </select>
+                            - <input id="c-input" type="tel" size="1" maxlength="4" required></label>
+                            - <input id="c-input" type="tel" size="1" maxlength="4" required></label>
+                        </li>
+               
+                        <li class="c-info">
+                            <span>이메일</span>
+                            <input id="c-input" type="email" required></span>
+                        </li>
+                        <li class="c-info">
+                            <span>비밀번호</span>
+                            <input id="c-input" type="password" required>
+                        </li>
+                        <li class="c-info">
+                            <span>비밀번호 확인</span>
+                            <input id="c-input" type="password" required>
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -122,11 +122,13 @@
           cursor: pointer;
         }
 
-        .c-info2,
-        .c-info3 {
-          display: inline;
-        }
-
+      .info li span{
+        /* width값이 텍스트의 공간을 */
+        display: inline-block;
+        width: 130px;
+        text-align: left;
+      }
+        
         .c-li,
         .c-li1,
         .c-li2 {
