@@ -23,11 +23,17 @@
   font-family: "Pacifico", cursive;
   font-weight: 400;
   font-style: normal;
+  position: absolute;
+  right:45%;
+  top: 80px;
 }
 
 .s-logoimg {
-  width: 100px;
-  height: 80px;
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  right: 46%;
+  top: 10px;
 }
 
 .s-nav {
