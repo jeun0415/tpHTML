@@ -17,9 +17,6 @@ align-items: center;
 }
 .t-order-box-main li,.t-fixed-container li{
     list-style: none;
-    list-style: none;
-    text-align: center;
-     flex: 1;
 
 } 
 .t-category-box{

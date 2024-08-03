@@ -1,11 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
-
 *{
     padding: 0;
     margin: 0;
-    font-family: "Noto Sans KR", sans-serif;
 }
-.t-order-box-main ul{
+.t-order-box-main ul,.t-fixed-container ul{
 display: flex;
 justify-content: space-between; 
 align-items: center; 
@@ -13,13 +10,6 @@ width: 100%;
 margin: auto; 
 
 }
-.t-fixed-container ul{
-    display: flex;
-    width: 50%; /* 너비를 줄여서 좌우 여백 확보 */
-    margin: auto; 
-    
-}
-
 .t-order-box-main li,.t-fixed-container li{
     margin: 10px;
     padding: 30px;
@@ -28,26 +18,17 @@ margin: auto;
     flex: 1;
 }
 .t-category-box{
-    /* background-color: #FFB429; */
-    background-color:  rgb(247, 210, 143);
-    border: 2px solid #FFB429;
+    background-color: #FFB429;
+    border: 2px solid #d1cfca;
     border-radius: 10px;
-    padding-right: 5px;
-    box-sizing: border-box; /* 패딩과 보더를 포함한 크기 계산 */
 
-}
-.t-set{
-    padding-left: 25px;
-    padding-right: 25px;
 }
 #t-num-li{
     display: inline-flex;
     border: 1px solid #FFB429;
     border-radius: 5px;
     align-items: center;
-    padding: 0;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 0; /* 패딩 제거 */
     justify-content: center; /* 버튼과 입력 필드 가운데 정렬 */
 }
 .t-num-button{
@@ -56,7 +37,6 @@ margin: auto;
     border: none;
     padding: 5px 10px;
     font-size: 15px;    
-    
 }
 .t-num-num{
     width: 50px;
@@ -65,7 +45,7 @@ margin: auto;
     font-size: 15px;
 }
 .t-order-box-main{
-    border: 2px solid #FFB429;
+    border: 2px solid #d1cfca;
     border-radius: 10px;
     padding: 30px;
     padding-right: 50px;
@@ -76,17 +56,11 @@ margin: auto;
 .t-order-box{
     border: 4px solid #FFB429;
     border-radius: 10px;
-}
-.t-order-box li{
-    display: inline-flex;
-    justify-content: center;
-    margin: 0;
-    padding: 20px;
+    padding: 10px;
+
 }
 .t-order-line,.t-order-line1,.t-order-line2{
     border-bottom: dotted 1px #FFB429;
-    padding: 1px; /* 모든 li 요소에 동일한 패딩 적용 */
-    box-sizing: border-box; /* 패딩과 보더를 포함한 크기 계산 */
 }
 
 .t-shoppingcart{
@@ -103,17 +77,16 @@ margin: auto;
     position: fixed;
     bottom: 0; /* 화면의 아래쪽에 고정 */
     width: 100%; /* 전체 너비를 차지 */
+    background-color: white; /* 배경색을 설정하여 다른 요소와 구분 */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* 상단에 그림자 추가 */
     z-index: 1000; /* 다른 요소보다 위에 표시되도록 설정 */
-    font-size: large;
-    color: white;
-    
-    
 }
-#deselect-all {
-    padding: 20px;
-    border-radius: 30px;
-    background-color: hwb(24 8% 0%); /* 배경색 설정 */
-
+.t-fixed-container li {
+    padding: 10px 20px; /* 각 항목에 여유 공간 추가 */
+    border: 4px solid #d1cfca; /* 테두리 설정 */
+    border-radius: 10px;
+    background-color: #FFB429; /* 배경색 설정 */
+    text-align: center;
 }
 .t-caution {
     margin: 20px auto;
@@ -143,23 +116,4 @@ margin: auto;
     height: 25px; /* 네모 상자의 높이 */
     background-color: #FFB429; /* 상자 색상 (노란색) */
     margin-right: 10px; /* 상자와 텍스트 사이의 간격 */
-}
-.t-select-order li{
-    padding: 20px; /* 각 항목에 여유 공간 추가 */
-    border-radius: 30px;
-    border: 2px solid #FFB429;
-    background-color: hwb(24 8% 0%) ; /* 배경색 설정 */
-    text-align: center;
-}
-    
-.t-order-link:hover{
-    background-color: #FFB429;
-    color: white;
-    cursor: pointer;
-      }    
-
-.t-order-select{ 
-    text-decoration: none;
-    color: inherit;
-    
 }
