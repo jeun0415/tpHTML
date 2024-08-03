@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 960px;
+  min-width: 960px;
+  margin: 0 auto;
+}
+
+.content {
+  position: relative;
+}
+
+/* .header {
+  background-color: rgba(255, 180, 41, 0.9);
+  overflow: hidden;
+} */
+
+.logo {
+  float: left;
+  display: block;
+}
+.title {
+  margin-left: 30%;
+  float: left;
+}
+
+ul {
+  float: right;
+}
+
+li {
+  float: left;
+  list-style-type: none;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: block;
+  padding: 1rem 1rem;
+  margin: 0.6rem 0.2rem;
+}
+
+.order {
+  background-color: green;
+  border-radius: 0.5rem;
+}
+
+/* shc css */
+.header {
+  color: black;
+  width: 100%;
+  display: inline-block;
+  /* position: fixed; */
+}
+
+header {
+  height: 100px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  border-top: solid 2px rgb(255, 180, 41);
+  border-bottom: solid 2px rgb(255, 180, 41);
+}
+
+nav a {
+  color: black;
+  padding: 15px 60px;
+  margin: 0 20px;
+  /* width: 70px; */
+  text-decoration: none;
+  text-align: center;
+  border: solid 3px rgb(255, 180, 41);
+  border-radius: 17px;
+}
+
+nav a:hover {
+  background-color: rgb(255, 180, 41);
+}
+
+.search-div {
+  position: absolute;
+  padding: 5px;
+  width: 4.6rem;
+  right: 280px;
+  top: 25px;
+}
