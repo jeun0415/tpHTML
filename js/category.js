@@ -3,6 +3,7 @@ import * as product from "./product.js";
 let categoryMenusList = document.querySelectorAll(".menu_category_list");
 
 function focusAfterClick(event) {
+  event.preventDefault();
   // 메뉴 어느 곳이든 클릭했을 때 항상 같은 결과를 내도록 함
 
   // 모든 메뉴 항목에서 on 클래스 제거
@@ -23,6 +24,7 @@ function focusAfterClick(event) {
 
   product.renderRecommendedProducts(categoryId);
   product.renderProducts(categoryId);
+  scrollToProducts();
 }
 
 for (let i = 0; i < categoryMenusList.length; i++) {
@@ -31,3 +33,9 @@ for (let i = 0; i < categoryMenusList.length; i++) {
 
 product.renderRecommendedProducts(1);
 product.renderProducts(1);
+
+function scrollToProducts() {
+  const element = document.querySelector(".product_list");
+  const top = element.offsetTop - 50; // 요소의 상단 좌표
+  window.scrollTo({ top: top, behavior: "smooth" });
+}
