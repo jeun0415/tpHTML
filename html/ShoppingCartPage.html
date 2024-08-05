@@ -55,6 +55,7 @@
 <body>
      <!-- shc header -->
      <div class="s-head">
+<<<<<<< HEAD
         <header class="s-header">
             <div>
                 <img src="../img/logo.png" class="s-logoimg" >
@@ -69,6 +70,24 @@
             <a href="category.html">카테고리</a>
             <a href="#bucket">장바구니</a>
             <a href="#pay">결제하기</a>
+=======
+        <div class="t-logo">
+            <div class="t-logo-text">
+            <p><h1>뛰뛰</h1></p><p><h1>빵빵</h1></p>
+        </div>
+        </div>
+            <header class="s-header">
+            <div>
+                <img src="../img/logo.png" class="s-logoimg" >
+                <h1 style="z-index: 50;">Bread&Cake</h1>
+            </div>
+        </header>
+        <nav class="s-nav">
+            <a href="tp_hp.html">홈</a>
+            <a href="category.html">카테고리</a>
+            <a href="ShoppingCartPage.html">장바구니</a>
+            <a href="ex03.html">결제하기</a>
+>>>>>>> cew
         </nav>
         <div class="s-search-div">
             <input type="text" class="s-input" placeholder="제품을 검색해주세요">
@@ -81,6 +100,7 @@
         <h2 class="t-shoppingcart"><div class="t-square-box"></div>장바구니</h2>
     </div>
     <div class="t-order-box-main">
+<<<<<<< HEAD
     <div>
         <ul class="t-category-box">
              <input type="checkbox" id="select-all-checkbox">
@@ -135,6 +155,66 @@
             <li>5000원</li>
         </ul>
     </div>
+=======
+        <div>
+            <ul class="t-category-box">
+                <input type="checkbox" id="select-all-checkbox" class="my-checkbox">
+                <label for="select-all-checkbox" class="custom-checkbox"></label>
+                <li><b>상품[옵션]</b></li>
+                <li><b>주문금액</b></li>
+                <li><b>수량</b></li>
+                <li><b>합계</b></li>
+                <li><b>배송비</b></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="t-order-line">
+                <input type="checkbox" class="my-checkbox" id="checkbox1">
+                <label for="checkbox1" class="custom-checkbox"></label>
+                <li>멜론빵</li>
+                <li>2500원</li>
+                <div class="t-set">
+                    <li id="t-num-li">
+                        <button class="t-num-button" type="button" onclick="decrement('num-jsc1')">-</button>
+                        <input type="text" class="t-num-num" id="num-jsc1" value="1" readonly>
+                        <button class="t-num-button" type="button" onclick="increment('num-jsc1')">+</button>
+                    </li>
+                </div>
+                <li>2500원</li>
+                <li>5000원</li>
+            </ul>
+            <ul class="t-order-line1">
+                <input type="checkbox" class="my-checkbox" id="checkbox2">
+                <label for="checkbox2" class="custom-checkbox"></label>
+                <li>소금빵</li>
+                <li>3500원</li>
+                <div class="t-set">
+                    <li id="t-num-li">
+                        <button class="t-num-button" type="button" onclick="decrement('num-jsc2')">-</button>
+                        <input type="text" class="t-num-num" id="num-jsc2" value="1" readonly>
+                        <button class="t-num-button" type="button" onclick="increment('num-jsc2')">+</button>
+                    </li>
+                </div>
+                <li>3500원</li>
+                <li>5000원</li>
+            </ul>
+            <ul class="t-order-line2">
+                <input type="checkbox" class="my-checkbox" id="checkbox3">
+                <label for="checkbox3" class="custom-checkbox"></label>
+                <li>블루베리 <br>케이크</li>
+                <li>35000원</li>
+                <div class="t-set">
+                    <li id="t-num-li">
+                        <button class="t-num-button" type="button" onclick="decrement('num-jsc3')">-</button>
+                        <input type="text" class="t-num-num" id="num-jsc3" value="1" readonly>
+                        <button class="t-num-button" type="button" onclick="increment('num-jsc3')">+</button>
+                    </li>
+                </div>
+                <li>35000원</li>
+                <li>5000원</li>
+        </ul>
+    </div>
+>>>>>>> cew
 <div class = "t-order-box">
     <ul>
         <li><b> 주문 합계 : 41,000원</b></li>
@@ -152,8 +232,13 @@
         <li class="t-order-link" id="deselect-all"><b>선 택 삭 제</b></li>
         <li class="t-order-link"><b>배 송 지 역 확 인</b></li>
         <li class="t-order-link"><b>쇼 핑 계 속 하 기</b></li>
+<<<<<<< HEAD
         <li class="t-order-link"><b>전 체 주 문</b></li>
         <li class="t-order-link"><a href="../html/ex02-2.html" class="t-order-select"><b>선 택 상 품 주 문</b></a></li>
+=======
+        <li class="t-order-link"><a href="/html/ex03.html" class="t-order-select"><b>전 체 주 문</b></a></li>
+        <li class="t-order-link"><a href="/html/ex03.html" class="t-order-select"><b>선 택 상 품 주 문</b></a></li>
+>>>>>>> cew
     </ul>
 </div>
 <div class="t-caution">

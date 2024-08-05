@@ -1,0 +1,161 @@
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+        * {
+          font-family: "Noto Sans KR", sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+
+        #c-container {
+          width: 1200px;
+          margin: auto;
+        }
+
+        .c-fd, .c-fd2 {
+          margin: 120px;
+          padding: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .c-fd2{
+          padding: 26px;
+        }
+
+        
+
+        .c-lgd {
+          border: 4px solid hsl(39, 94%, 65%);
+          border-radius: 10px;
+          margin: 10px;
+          padding: 2px 10px;
+          text-align: center;
+        }
+
+        .c-payment {
+          text-align: center;
+        }
+
+        .c-a2 {
+          text-decoration: none;
+          color: black;
+          background-color: #ccc;
+          display: inline;
+          margin: 20px;
+        }
+
+        .c-a2:hover {
+          background-color: hwb(24 8% 0%);
+          color: white;
+        }
+
+        .c-group1,
+        .c-group2 {
+          margin: 10px;
+          display: inline;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+        }
+
+        #c-ck1,
+        #c-ck2 {
+          cursor: pointer;
+          transform: scale(1.5);
+        }
+
+        #c-lab1,
+        #c-lab2 {
+          cursor: pointer;
+          font-size: 1.2rem;
+          margin-right: 10px;
+        }
+
+        .c-info{
+          list-style: none;
+          padding: 8px;
+        }
+
+        .c-info label {
+          display: block;
+          margin-bottom: 5px;
+        }
+
+        .c-li, .c-li1, .c-li2 {
+          list-style: none;
+          display: inline;
+          padding: 0;
+        }
+
+        .c-tt1{
+          font-size: 20px;
+          font-weight: 500;
+          text-align: center;
+        }
+
+        .c-tt1, .c-tt2 {
+          resize: none;
+          border-radius: 10px;
+        }
+
+        .c-pay1, .c-pay2, .c-pay3, .c-pay4, .c-pay5, .c-pay6, .c-pay7{
+          border: 1px solid #ccc;
+          margin: 40px;
+          padding: 20px;
+        }
+
+        #c-receipt{
+          border: 1px solid #ccc;
+          margin: 40px;
+          padding: 20px;
+        }
+
+        .c-prt1, .c-prt2{
+          cursor: pointer;
+        }
+
+        .c-a {
+          text-decoration: none;
+          color: black;
+          background-color: hsl(0, 0%, 89%);
+          display: inline;
+          margin: 20px;
+          padding: 0 5px 0 5px;
+        }
+
+        .c-btn {
+          display: flex;
+          justify-content: center;
+          margin: 100px 0 100px 0;
+        }
+
+        .c-btn>.c-btnip {
+          font-size: 1.1rem;
+          padding: 0.8rem 3rem;
+          margin-right: 5rem;
+          cursor: pointer;
+          border-radius: 17px;
+          border: none;
+        }
+
+        .c-btn>.c-btnip:hover {
+          transform: scale(1.15);
+        }
+
+        #c-lb1 {
+          background-color: orange;
+        }
+
+        #c-lb1:active {
+          background-color: hwb(24 8% 0%);
+          color: white;
+        }
+
+        #c-lb2 {
+          background-color: #ccc;
+        }
+
+        .c-bn {
+          cursor: pointer;
+        }

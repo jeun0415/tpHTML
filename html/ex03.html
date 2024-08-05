@@ -8,21 +8,22 @@
     <link rel="stylesheet" href="../css/tp_hp.css">
     <link rel="stylesheet" href="../css/ex03.css">
     <link rel="stylesheet" href="../css/ShoppingCartPage은우님장바구용2.css">
+    <script src="../js/ex03.js" defer></script>
 </head>
 
 <body>
     <div class="s-head">
         <header class="s-header">
-            <h1>DDUIDDUIBBANGBBNAG</h1>
+            <div>
+                <img src="../img/logo.png" class="s-logoimg">
+                <h1 style="z-index: 50;">Bread&Cake</h1>
+            </div>
         </header>
-        <div>
-            <img src="../img/logo.jpg" class="s-logoimg" style="border-radius: 50%;">
-        </div>
         <nav class="s-nav">
             <a href="tp_hp.html">홈</a>
             <a href="category.html">카테고리</a>
-            <a href="#bucket">장바구니</a>
-            <a href="#pay">결제하기</a>
+            <a href="ShoppingCartPage.html">장바구니</a>
+            <a href="ex03.html">결제하기</a>
         </nav>
         <div class="s-search-div">
             <input type="text" class="s-input" placeholder="제품을 검색해주세요">
@@ -55,7 +56,7 @@
                     <div class="t-order-box-main">
                         <div>
                             <ul class="t-category-box">
-                                <input type="checkbox">
+                                <input type="checkbox" onclick="cartSelectAll(this)">
                                 <li><b>상품[옵션]</b></li>
                                 <li><b>주문금액</b></li>
                                 <li><b>수량</b></li>
@@ -124,8 +125,28 @@
                     <h3 class="c-head">
                         <div class="t-square-box"></div>&nbsp;&nbsp;배달주소
                     </h3>
+                    <div class="bl_stack form">
+                        <div class="bl_stack bl_stack--row">
+                            <input type="text" class="el_input hp_txt-center" disabled id="zonecode" />
+                            <button class="el_btn el_btn--outline hp_shrink-0" id="search-btn">
+                                우편번호 찾기
+                            </button>
+                        </div>
+                        <input type="text" class="el_input" disabled id="roadAddress" />
+                        <input type="text" class="el_input" placeholder="상세주소를 입력해주세요." id="roadAddressDetail" />
+                        <button class="el_btn" id="register-btn">주소 등록하기</button>
+                    </div>
+                    <div class="bl_stack">
+                        <div class="el_ttl">주소 입력 결과</div>
+                        <div class="el_ttl">우편번호</div>
+                        <div class="el_result"></div>
+                        <div class="el_ttl">주소</div>
+                        <div class="el_result"></div>
+                        <div class="el_ttl">상세주소</div>
+                        <div class="el_result"></div>
+                    </div>
                     <span>주소를 정확히 입력해주세요😊<br></span>
-                    <textarea id="c-input" class="c-tt1" cols="60" rows="2" required></textarea>
+                    <textarea class="c-input" class="c-tt1" cols="60" rows="2" required></textarea>
                 </div>
                 <div class="c-sec">
                     <h3 class="c-head">
@@ -134,11 +155,12 @@
                     <ul>
                         <li class="c-li1">
                             <span>뛰뛰빵빵에게 (최대 50자)<br></span>
-                            <textarea id="c-input" class="c-tt2" name="to-shop" cols="100" rows="4"></textarea><br><br>
+                            <textarea class="c-input" class="c-tt2" name="to-shop" cols="100"
+                                rows="4"></textarea><br><br>
                         </li>
                         <li class="c-li2">
                             <span>라이더님께 (최대 50자)<br></span>
-                            <textarea id="c-input" class="c-tt2" name="to-rider" cols="100" rows="4"></textarea>
+                            <textarea class="c-input" class="c-tt2" name="to-rider" cols="100" rows="4"></textarea>
                         </li>
                     </ul>
                 </div>
@@ -146,6 +168,7 @@
                     <h3 class="c-head">
                         <div class="t-square-box"></div>&nbsp;&nbsp;주문고객 정보
                     </h3>
+<<<<<<< HEAD
                     
                     <ul class="c-info info">
                         <li class="c-info">
@@ -156,6 +179,18 @@
                         <li  class="c-info">
                             <span>핸드폰 번호</span>
                             <select name="" id="c-input">
+=======
+
+                    <ul class="c-info info">
+                        <li class="c-info">
+                            <span>주문자 이름</span>
+                            <input class="c-input" type="text" required>
+                        </li>
+
+                        <li class="c-info">
+                            <span>핸드폰 번호</span>
+                            <select name="" class="c-input">
+>>>>>>> cew
                                 <option value="tel_1" selected>010</option>
                                 <option value="tel_1">011</option>
                                 <option value="tel_1">016</option>
@@ -163,6 +198,7 @@
                                 <option value="tel_1">018</option>
                                 <option value="tel_1">019</option>
                             </select>
+<<<<<<< HEAD
                             - <input id="c-input" type="tel" size="1" maxlength="4" required></label>
                             - <input id="c-input" type="tel" size="1" maxlength="4" required></label>
                         </li>
@@ -178,6 +214,23 @@
                         <li class="c-info">
                             <span>비밀번호 확인</span>
                             <input id="c-input" type="password" required>
+=======
+                            - <input class="c-input" type="tel" size="1" maxlength="4" required></label>
+                            - <input class="c-input" type="tel" size="1" maxlength="4" required></label>
+                        </li>
+
+                        <li class="c-info">
+                            <span>이메일</span>
+                            <input class="c-input" type="email" required></span>
+                        </li>
+                        <li class="c-info">
+                            <span>비밀번호</span>
+                            <input class="c-input" type="password" required>
+                        </li>
+                        <li class="c-info">
+                            <span>비밀번호 확인</span>
+                            <input class="c-input" type="password" required>
+>>>>>>> cew
                         </li>
                     </ul>
                 </div>
@@ -188,128 +241,135 @@
                         <h3 class="c-head">
                             <div class="t-square-box"></div>&nbsp;&nbsp;결제수단
                         </h3>
-                        <li class="c-li"><a href="" class="c-a2">신용카드</a></li>
-                        <li class="c-li"><a href="" class="c-a2">가상계좌</a></li>
-                        <li class="c-li"><a href="" class="c-a2">계좌이체</a></li>
+                        <li class="c-li5" payment-data="1"><a href="#" class="c-a2 on">신용카드</a></li>
+                        <li class="c-li5" payment-data="2"><a href="#" class="c-a2">가상계좌</a></li>
+                        <li class="c-li5" payment-data="3"><a href="#" class="c-a2">계좌이체</a></li>
                     </ul>
                 </div>
-                <div class="c-pay1">
-                    <h3 class="c-top1">신용카드</h3>
-                    <label for="">카드종류&nbsp;</label>
-                    <select name="" id="c-input">
-                        <option value="" selected>카드를 선택해주세요.</option>
-                        <option value="">KB카드</option>
-                        <option value="">BC카드</option>
-                        <option value="">삼성카드</option>
-                        <option value="">신한카드</option>
-                        <option value="">외환카드</option>
-                        <option value="">하나카드</option>
-                        <option value="">롯데카드</option>
-                        <option value="">씨티카드</option>
-                        <option value="">광주비자</option>
-                        <option value="">현대카드</option>
-                        <option value="">전북카드</option>
-                        <option value="">NH카드</option>
-                        <option value="">수협카드</option>
-                        <option value="">제주카드</option>
-                        <option value="">신협카드</option>
-                        <option value="">우리카드</option>
-                    </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <label for="">할부종류&nbsp;</label>
-                    <select name="" id="c-input">
-                        <option value="" selected>일시불</option>
-                        <option value="">2개월</option>
-                        <option value="">3개월</option>
-                        <option value="">5개월</option>
-                    </select>
+                <div class="payment-method">
+                    <div class="c-pay1">
+                        <h3 class="c-top1">신용카드</h3>
+                        <label for="">카드종류&nbsp;</label>
+                        <select name="" class="c-input">
+                            <option value="" selected>카드를 선택해주세요.</option>
+                            <option value="">KB카드</option>
+                            <option value="">BC카드</option>
+                            <option value="">삼성카드</option>
+                            <option value="">신한카드</option>
+                            <option value="">외환카드</option>
+                            <option value="">하나카드</option>
+                            <option value="">롯데카드</option>
+                            <option value="">씨티카드</option>
+                            <option value="">광주비자</option>
+                            <option value="">현대카드</option>
+                            <option value="">전북카드</option>
+                            <option value="">NH카드</option>
+                            <option value="">수협카드</option>
+                            <option value="">제주카드</option>
+                            <option value="">신협카드</option>
+                            <option value="">우리카드</option>
+                        </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label for="">할부종류&nbsp;</label>
+                        <select name="" class="c-input">
+                            <option value="" selected>일시불</option>
+                            <option value="">2개월</option>
+                            <option value="">3개월</option>
+                            <option value="">5개월</option>
+                        </select>
+                    </div>
+                    <!--가상계좌-->
+                    <div class="c-pay2">
+                        <h3 class="c-top1">가상계좌</h3>
+                        <label for="">입금자명&nbsp;</label>
+                        <input class="c-input" type="text">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label for="">입금은행&nbsp;</label>
+                        <select name="" class="c-input">
+                            <option value="" selected>입금은행 선택</option>
+                            <option value="">기업</option>
+                            <option value="">국민</option>
+                            <option value="">농협</option>
+                            <option value="">하나</option>
+                            <option value="">우리</option>
+                            <option value="">신한</option>
+                            <option value="">경남</option>
+                            <option value="">우체국</option>
+                            <option value="">부산</option>
+                        </select>
+                        <h4 class="c-top2">무통장입금(가상계좌) 서비스 안내</h4>
+                        <ul>
+                            <li class="c-li">- 고유한 가상계좌 번호를 부여하고 해당 계좌번호로 입금하시면 결제완료 됩니다.</li>
+                            <li class="c-li">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                - 결제하기 버튼을 클릭하여 계좌번호를 발급받고 해당 번호로 무통장 입금하시면 됩니다.</li>
+                        </ul>
+                    </div>
+                    <div class="c-pay3">
+                        <h3 class="c-top1">결제안내</h3>
+                        <ul>
+                            <li class="c-li">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                - 계좌이체로 결제완료시 본인 계좌에서 즉시 이체 처리됩니다.</li><br>
+                            <li class="c-li">- 실시간 계좌이체는 은행별 이용시간이 다를 수 있습니다.</li>
+                        </ul>
+                    </div>
                 </div>
-                <!--가상계좌-->
-                <div class="c-pay2">
-                    <h3 class="c-top1">가상계좌</h3>
-                    <label for="">입금자명&nbsp;</label>
-                    <input id="c-input" type="text">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <label for="">입금은행&nbsp;</label>
-                    <select name="" id="c-input">
-                        <option value="" selected>입금은행 선택</option>
-                        <option value="">기업</option>
-                        <option value="">국민</option>
-                        <option value="">농협</option>
-                        <option value="">하나</option>
-                        <option value="">우리</option>
-                        <option value="">신한</option>
-                        <option value="">경남</option>
-                        <option value="">우체국</option>
-                        <option value="">부산</option>
-                    </select>
-                    <h4 class="c-top2">무통장입금(가상계좌) 서비스 안내</h4>
-                    <ul>
-                        <li class="c-li">- 고유한 가상계좌 번호를 부여하고 해당 계좌번호로 입금하시면 결제완료 됩니다.</li>
-                        <li class="c-li">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            - 결제하기 버튼을 클릭하여 계좌번호를 발급받고 해당 번호로 무통장 입금하시면 됩니다.</li>
-                    </ul>
-                </div>
-                <div class="c-pay3">
-                    <h3 class="c-top1">결제안내</h3>
-                    <ul>
-                        <li class="c-li">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            - 계좌이체로 결제완료시 본인 계좌에서 즉시 이체 처리됩니다.</li><br>
-                        <li class="c-li">- 실시간 계좌이체는 은행별 이용시간이 다를 수 있습니다.</li>
-                    </ul>
-                </div>
+
                 <div id="c-receipt">
                     <ul>
-                        <li class="c-li">현금영수증 신청
-                            <div>
-                                <input class="c-prt1" type="radio" name="rr">발급
-                                <input class="c-prt2" type="radio" name="rr" checked>미발급
+                        <li class="c-li6"><span style="font-size: 13pt;">현금영수증 신청</span>
+                            <div class="c-radio">
+                                <input class="c-prt1" type="radio" name="rr">&nbsp;발급&nbsp;&nbsp;&nbsp;
+                                <input class="c-prt2" type="radio" name="rr" checked>&nbsp;미발급
                             </div>
                         </li>
                     </ul>
                     <div>
-                        <ul>
-                            <input type="radio" name="aa" checked>소득공제용(일반 개인용)
+                        <ul class="c-type1">
+                            <input type="radio" name="aa" checked>&nbsp;소득공제용(일반 개인용)
+                            &nbsp;&nbsp;&nbsp;
                             <li class="c-li">
-                                <label for="">이름</label>
-                                <input id="c-input" type="text">
-                            </li>
+                                <label for="">이름</label>&nbsp;
+                                <input class="c-input" type="text">
+                            </li>&nbsp;&nbsp;&nbsp;
                             <li class="c-li">
-                                <label for="">휴대폰번호</label>
-                                <input id="c-input" type="text">
+                                <label for="">휴대폰번호</label>&nbsp;
+                                <input class="c-input" type="text">
                             </li>
                         </ul>
-                        <ul>
-                            <input type="radio" name="aa">지출증빙용(사업자용)
+                        <ul class="c-type2">
+                            <input type="radio" name="aa">&nbsp;지출증빙용(사업자용)
+                            &nbsp;&nbsp;&nbsp;
                             <li class="c-li">
-                                <label for="">사업자명</label>
-                                <input id="c-input" type="text">
-                            </li>
+                                <label for="">사업자명</label>&nbsp;
+                                <input class="c-input" type="text">
+                            </li>&nbsp;&nbsp;&nbsp;
                             <li class="c-li">
-                                <label for="">사업자번호</label>
-                                <input id="c-input" type="text">
+                                <label for="">사업자번호</label>&nbsp;
+                                <input class="c-input" type="text">
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="c-pay4">
                     <ul class="t-order-box2" style="font-size: 14pt;">
-                        <li> 주문 합계 : 41,000원</li>
-                        <h1>+</h1>
-                        <li> 배송비 : 5,000원</li>
-                        <h1>=</h1>
-                        <li>총 주문금액 : </li>
-                        <h1>46,000원</h1>
+                        <li class="c-li7"> 주문 합계 : 41,000원</li>
+                        <h2 class="c-li7">+</h2>
+                        <li class="c-li7"> 배송비 : 5,000원</li>
+                        <h2 class="c-li7">=</h2>
+                        <li class="c-li7">총 주문금액 : </li>
+                        <h2 class="c-li7">46,000원</h2>
                     </ul>
                 </div>
                 <div class="c-pay6">
                     <h3 class="c-top1">개인정보 수집 및 이용 동의</h3>
                     <h4 class="c-top3">1. 개인정보의 수집 및 이용 목적</h4>
-                    <p class="c-blank2">뛰뛰빵빵은 원활한 주문과 서비스 접수, 정확한 배송자 및 배송주소 확인, 대금 결제 목적 등의 목적으로 고객님의 개인정보를 수집하려 합니다.</p>
+                    <p class="c-blank2">뛰뛰빵빵은 원활한 주문과 서비스 접수, 정확한 배송자 및 배송주소 확인, 대금 결제 목적 등의 목적으로 고객님의 개인정보를 수집하려 합니다.
+                    </p>
                     <h4 class="c-top3">2. 개인정보 수집 및 활용동의(필수)</h4>
                     <div>
                         <table style="margin-left: auto; margin-right: auto; border: 1px solid #ccc;">
                             <thead>
-                                <tr><th>목적</th>
+                                <tr>
+                                    <th>목적</th>
                                     <th>항목</th>
                                     <th>보유기간</th>
                                 </tr>
@@ -339,28 +399,29 @@
                     <div class="c-agr">
                         <h4 class="c-agr2">전자금융거래 기본약관</h4>
                         <a href="" class="c-a">자세히보기</a>
-                        <input type="checkbox" name="agree" value="agr4">
+                        <input class="c-check" type="checkbox" name="agree" value="agr4">
                         <label for="">동의</label>
                     </div>
                     <div class="c-agr">
                         <h4 class="c-agr2">개인정보의 수집 및 이용 동의 [필수]</h4>
                         <a href="" class="c-a">자세히보기</a>
-                        <input type="checkbox" name="agree" value="agr3">
+                        <input class="c-check" type="checkbox" name="agree" value="agr3">
                         <label for="">동의</label>
                     </div>
                     <div class="c-agr">
                         <h4 class="c-agr2">개인정보의 제공 및 위탁 동의</h4>
                         <a href="" class="c-a">자세히보기</a>
-                        <input type="checkbox" name="agree" value="agr2">
+                        <input class="c-check" type="checkbox" name="agree" value="agr2">
                         <label for="">동의</label>
                     </div>
                     <div class="c-agr">
                         <h4 class="c-agr2">구매할 상품의 결제 조건을 확인하였으며, 구매에 동의합니다.</h4>
-                        <input type="checkbox" name="agree" value="agr1">
+                        <input class="c-check" type="checkbox" name="agree" value="agr1">
                         <label for="">동의</label>
                     </div>
                     <div class="c-agr">
-                        <input type="checkbox" name="agree" value="selectall" onclick="selectAll(this)">
+                        <input class="c-check" type="checkbox" name="agree" value="selectall"
+                            onclick="siteAgreeSelectAll(this)">
                         <label for="">전체 동의</label>
                     </div>
                 </div>
