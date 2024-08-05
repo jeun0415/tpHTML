@@ -14,7 +14,7 @@ function siteAgreeSelectAll(selectAll) {
   });
 }
 
-const paymentList = document.querySelectorAll(".c-li");
+const paymentList = document.querySelectorAll(".c-li5");
 
 for (let i = 0; i < paymentList.length; i++) {
   paymentList[i].onclick = showPaymentMenu;
@@ -26,7 +26,7 @@ function showPaymentMenu(event) {
   const selected = document.querySelectorAll(".c-a2");
   selected.forEach((select) => select.classList.remove("on"));
 
-  const targetElement = event.target.closest(".c-li");
+  const targetElement = event.target.closest(".c-li5");
 
   if (targetElement) {
     targetElement.querySelector("a").classList.add("on");
