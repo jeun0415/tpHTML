@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뛰뛰빵빵</title>
+    <link rel="stylesheet" href="../css/ex02.css">
+</head>
+
+<body>
+    <header></header>
+    <div id="container">
+        <form>
+            <fieldset>
+                <legend>수령방법</legend>
+                <label for="ck1" id="lab1">배달</label>
+                <input type="radio" name="gg" id="ck1" checked>
+                <label for="ck2" id="lab2">포장</label>
+                <input type="radio" name="gg" id="ck2">
+            </fieldset>
+            <fieldset>
+                <legend>주문내역</legend>
+                <button>장바구니로 돌아가기</button>
+            </fieldset>
+            <div>
+                <fieldset>
+                    <legend>배달주소</legend>
+                    <label for="">주소<input type="text" required></label>
+                    <button>주소찾기</button>
+                </fieldset>
+                <fieldset>
+                    <legend>요청사항</legend>
+                    <ul>
+                        <li>
+                            <label for="to-shop">뛰뛰빵빵에게 (최대 50자)</label>
+                            <textarea name="" id="to-shop" cols="100" rows="4"></textarea>
+                        </li>
+                        <li>
+                            <label for="to-rider">라이더님께 (최대 50자)</label>
+                            <textarea name="" id="to-rider" cols="100" rows="4"></textarea>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>주문고객 정보</legend>
+                    <ul>
+                        <li><label for="">주문자 이름<input type="text" required></label></li>
+                        <li><label for="">핸드폰 번호</label>
+                            <select name="" id="">
+                                <option value="tel_1" selected>010</option>
+                                <option value="tel_1">011</option>
+                                <option value="tel_1">016</option>
+                                <option value="tel_1">017</option>
+                                <option value="tel_1">018</option>
+                                <option value="tel_1">019</option>
+                            </select>
+                        </li>
+                        <li><label for="">-<input type="tel" size="1" maxlength="4" required></label></li>
+                        <li><label for="">-<input type="tel" size="1" maxlength="4" required></label></li>
+                        <li><label for="">이메일<input type="email" required></label></li>
+                        <li><label for="">비밀번호<input type="password" required></label></li>
+                        <li><label for="">비밀번호 확인<input type="password" required></label></li>
+                    </ul>
+                </fieldset>
+                <div class="payment">
+                    <div>
+                        <ul>
+                            <div class="bb"></div>
+                            <legend>결제수단</legend>
+                            <li class=""><a href="">신용카드</a></li>
+                            <li class=""><a href="">가상계좌</a></li>
+                            <li class=""><a href="">계좌이체</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>신용카드</h3>
+                        <label for="">카드종류</label>
+                        <select name="" id="">
+                            <option value="" selected>카드를 선택해주세요.</option>
+                            <option value="">KB카드</option>
+                            <option value="">BC카드</option>
+                            <option value="">삼성카드</option>
+                            <option value="">신한카드</option>
+                            <option value="">외환카드</option>
+                            <option value="">하나카드</option>
+                            <option value="">롯데카드</option>
+                            <option value="">씨티카드</option>
+                            <option value="">광주비자</option>
+                            <option value="">현대카드</option>
+                            <option value="">전북카드</option>
+                            <option value="">NH카드</option>
+                            <option value="">수협카드</option>
+                            <option value="">제주카드</option>
+                            <option value="">신협카드</option>
+                            <option value="">우리카드</option>
+                        </select>
+                        <label for="">할부종류</label>
+                        <select name="" id="">
+                            <option value="" selected>일시불</option>
+                            <option value="">2개월</option>
+                            <option value="">3개월</option>
+                            <option value="">5개월</option>
+                        </select>
+                    </div>
+                    <!--가상계좌-->
+                    <div>
+                        <h3>가상계좌</h3>
+                        <label for="">입금자명</label>
+                        <input type="text">
+                        <label for="">입금은행</label>
+                        <select name="" id="">
+                            <option value="" selected>입금은행 선택</option>
+                            <option value="">기업</option>
+                            <option value="">국민</option>
+                            <option value="">농협</option>
+                            <option value="">하나</option>
+                            <option value="">우리</option>
+                            <option value="">신한</option>
+                            <option value="">경남</option>
+                            <option value="">우체국</option>
+                            <option value="">부산</option>
+                        </select>
+                        <h4>무통장입금(가상계좌) 서비스 안내</h4>
+                        <ul>
+                            <li>- 고유한 가상계좌 번호를 부여하고 해당 계좌번호로 입금하시면 결제완료 됩니다.</li>
+                            <li>- 결제하기 버튼을 클릭하여 계좌번호를 발급받고 해당 번호로 무통장 입금하시면 됩니다.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>결제안내</h3>
+                        <ul>
+                            <li>- 계좌이체로 결제완료시 본인 계좌에서 즉시 이체 처리됩니다.</li>
+                            <li>- 실시간 계좌이체는 은행별 이용시간이 다를 수 있습니다.</li>
+                        </ul>
+                    </div>
+                    <div id="receipt">
+                        <ul>
+                            <li>현금영수증 신청
+                                <div>
+                                    <input type="radio" name="rr">발급
+                                    <input type="radio" name="rr" checked>미발급
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <input type="radio" name="aa" checked>소득공제용(일반 개인용)
+                            </li>
+                            <li>
+                                <label for="">이름</label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label for="">휴대폰번호</label>
+                                <input type="text">
+                            </li>
+                            <input type="radio" name="aa">지출증빙용(사업자용)
+                            <ul>
+                                <li>
+                                    <label for="">사업자명</label>
+                                    <input type="text">
+                                </li>
+                                <li>
+                                    <label for="">사업자번호</label>
+                                    <input type="text">
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div>주문금액 합계
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <span>주문상품 금액 합계</span>
+                                <span>45,000원</span>
+                            </li>
+                            <li>
+                                <span>배송비 합계</span>
+                                <span>0원</span>
+                            </li>
+                            <li>
+                                <span>쿠폰 할인금액</span>
+                                <span>0원</span>
+                            </li>
+                            <li>
+                                <span>포인트 결제금액</span>
+                                <span>0원</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>개인정보 수집 및 이용 동의</h3>
+                        <div>
+                            <h4>1. 개인정보의 수집 및 이용 목적</h4>
+                            <p>뛰뛰빵빵은 원활한 주문과 서비스 접수, 정확한 배송자 및 배송주소 확인, 대금 결제 목적 등의 목적으로 고객님의 개인정보를 수집하려 합니다.</p>
+                            <h4>2. 개인정보 수집 및 활용동의(필수)</h4>
+                            <div>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>목적</th>
+                                            <th>항목</th>
+                                            <th>보유기간</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                뛰뛰빵빵 상품 주문 관련 서비스 접수
+                                                <br>배송자 및 배송주소 확인, 대금결제 목적
+                                            </td>
+                                            <td>
+                                                주문자 성명, 수령자 성명, 휴대전화번호
+                                                <br>주소, 이메일, 비밀번호(비회원 주문시에만 수집)
+                                            </td>
+                                            <td>
+                                                결제정보는 상법 등 관련법령 규정에
+                                                <br>의하여 5년간 보유
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p>관련 문의사항은 고객센터로 문의해주시기 바랍니다. 감사합니다.</p>
+                            <br>
+                            <div>
+                                <h3>결제대행 서비스 이용약관 동의</h3>
+                                <div>
+                                    <h4>전자금융거래 기본약관</h4>
+                                    <a href="">자세히보기</a>
+                                    <input type="checkbox">
+                                    <label for="">동의</label>
+                                </div>
+                                <div>
+                                    <h4>개인정보의 수집 및 이용 동의 [필수]</h4>
+                                    <a href="">자세히보기</a>
+                                    <input type="checkbox">
+                                    <label for="">동의</label>
+                                </div>
+                                <div>
+                                    <h4>개인정보의 제공 및 위탁 동의</h4>
+                                    <a href="">자세히보기</a>
+                                    <input type="checkbox">
+                                    <label for="">동의</label>
+                                </div>
+                                <div>
+                                    <h4>구매할 상품의 결제 조건을 확인하였으며, 구매에 동의합니다.</h4>
+                                    <input type="checkbox">
+                                    <label for="">동의</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    <label for="">전체 동의</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="last-btn">
+                <input type="submit" value="주문" id="lb1">
+                <input type="reset" value="취소" id="lb2">
+            </div>
+    </div>
+    </form>
+    </div>
+</body>
+
+</html>

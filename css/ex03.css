@@ -52,6 +52,7 @@
   border-radius: 5px;
   font-size: 16px;
   outline: none;
+  resize: none;
 }
 
 .c-input:focus {
@@ -70,7 +71,8 @@
   color: black;
   background-color: #ccc;
   display: inline;
-  margin: 20px;
+  margin: 5px 30px 5px 30px;
+  padding: 1px 5px 1px 5px;
 }
 
 .c-a2:hover {
@@ -142,6 +144,26 @@ span {
   padding: 0;
 }
 
+.c-li5{
+  list-style: none;
+  display: inline;
+  font-size: 1.1rem;
+}
+
+.c-li6 {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.c-li7{
+  display: inline;
+  margin: 0 10px 0 10px;
+}
+
+.c-radio{
+  margin-top: 20px;
+}
+
 .c-tt1 {
   font-size: 20px;
   font-weight: 500;
@@ -153,6 +175,10 @@ span {
 .c-tt2 {
   resize: none;
   border-radius: 10px;
+}
+
+.c-info{
+  margin: 25px;
 }
 
 .c-pay1,
@@ -184,6 +210,10 @@ span {
 .c-prt1,
 .c-prt2 {
   cursor: pointer;
+}
+
+.c-type1{
+  margin-bottom: 10px;
 }
 
 .c-a {
@@ -268,4 +298,8 @@ th {
 
 td {
   padding: 5px 20px 10px 20px;
+}
+
+.c-check{
+  cursor: pointer;
 }
