@@ -72,7 +72,7 @@
   background-color: #ccc;
   display: inline;
   margin: 5px 30px 5px 30px;
-  padding: 1px 5px 1px 5px;
+  padding: 1px 6px 3px 6px;
 }
 
 .c-a2:hover {
@@ -147,7 +147,7 @@ span {
 .c-li5{
   list-style: none;
   display: inline;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .c-li6 {
@@ -372,7 +372,6 @@ td {
   background-color: #f0f0f0;
 }
 .bl_stack {
-  
   display: flex;
   flex-direction: column;
   gap: 10px;
