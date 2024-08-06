@@ -9,18 +9,24 @@
     <link rel="stylesheet" href="../css/ex03.css">
     <link rel="stylesheet" href="../css/ShoppingCartPage.css">
     <script src="../js/ex03.js" defer></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 </head>
 
 <body>
     <div class="s-head">
         <div class="t-logo">
             <div class="t-logo-text">
-                <p><h1>뛰빵</h1></p><p><h1>뛰빵</h1></p>
+                <p>
+                <h1>뛰빵</h1>
+                </p>
+                <p>
+                <h1>뛰빵</h1>
+                </p>
             </div>
         </div>
-            <header class="s-header">
+        <header class="s-header">
             <div>
-                <img src="../img/logo.png" class="s-logoimg" >
+                <img src="../img/logo.png" class="s-logoimg">
                 <h1 class="t-logo-eng">Bread&Cake</h1>
             </div>
         </header>
@@ -130,28 +136,17 @@
                     <h3 class="c-head">
                         <div class="t-square-box"></div>&nbsp;&nbsp;배달주소
                     </h3>
-                    <div class="bl_stack form">
-                        <div class="bl_stack bl_stack--row">
-                            <input type="text" class="el_input hp_txt-center" disabled id="zonecode" />
-                            <button class="el_btn el_btn--outline hp_shrink-0" id="search-btn">
-                                우편번호 찾기
-                            </button>
-                        </div>
-                        <input type="text" class="el_input" disabled id="roadAddress" />
-                        <input type="text" class="el_input" placeholder="상세주소를 입력해주세요." id="roadAddressDetail" />
-                        <button class="el_btn" id="register-btn">주소 등록하기</button>
-                    </div>
-                    <div class="bl_stack">
-                        <div class="el_ttl">주소 입력 결과</div>
-                        <div class="el_ttl">우편번호</div>
-                        <div class="el_result"></div>
-                        <div class="el_ttl">주소</div>
-                        <div class="el_result"></div>
-                        <div class="el_ttl">상세주소</div>
-                        <div class="el_result"></div>
-                    </div>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control mb-2" id="zipp_code_id" name="zipp_code"
+                            placeholder="우편번호" disabled>
+                        <input type="button" id="zipp_btn" class="c-bn" onclick="execDaumPostcode()"
+                            value="우편번호 찾기"><br>
+                        <input type="text" class="c-input" name="user_add1" id="UserAdd1" maxlength="40"
+                            placeholder="기본 주소" required><br>
+                        <input type="text" class="c-input" name="user_add2" id="UserAdd2" maxlength="40"
+                            placeholder="상세 주소">
+                    </div><br>
                     <span>주소를 정확히 입력해주세요😊<br></span>
-                    <textarea class="c-input" class="c-tt1" cols="60" rows="2" required></textarea>
                 </div>
                 <div class="c-sec">
                     <h3 class="c-head">
