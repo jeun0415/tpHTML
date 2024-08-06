@@ -207,39 +207,40 @@ renderPaymentMethod("1");
 
 
 
-src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"
-  const elZonecode = document.querySelector("#zonecode");
-  const elRoadAddress = document.querySelector("#roadAddress");
-  const elRoadAddressDetail = document.querySelector("#roadAddressDetail");
-  const elResults = document.querySelectorAll(".el_result");
-  // 주소검색창 열기 함수
-  const onClickSearch = () => {
-    console.log(1);
-    new daum.Postcode({
-      oncomplete: function (data) {
-        // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분입니다.
-        // 예제를 참고하여 다양한 활용법을 확인해 보세요.
-        console.log(data);
-        elZonecode.setAttribute("value", data.zonecode);
-        elRoadAddress.setAttribute("value", data.address);
-      },
-    }).open();
-  };
-  const register = () => {
-    console.log(`우편번호: ${elZonecode.getAttribute("value")}`);
-    console.log(`주소: ${elRoadAddress.getAttribute("value")}`);
-    console.log(`상세주소: ${elRoadAddressDetail.getAttribute("value")}`);
-    elResults[0].innerHTML = elZonecode.getAttribute("value");
-    elResults[1].innerHTML = elRoadAddress.getAttribute("value");
-    elResults[2].innerHTML = elRoadAddressDetail.getAttribute("value");
-  };
-  // 이벤트 추가
-  document.querySelector("#search-btn").addEventListener("click", () => {
-    onClickSearch();
-  });
-  document.querySelector("#register-btn").addEventListener("click", () => {
-    register();
-  });
-  elRoadAddressDetail.addEventListener("change", (e) => {
-    elRoadAddressDetail.setAttribute("value", e.target.value);
-  });
+
+function execDaumPostcode() {
+  new daum.Postcode({
+      oncomplete: function(data) {
+          // 팝업을 통한 검색 결과 항목 클릭 시 실행
+          var addr = ''; // 주소_결과값이 없을 경우 공백 
+          var extraAddr = ''; // 참고항목
+
+          //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+          if (data.userSelectedType === 'R') { // 도로명 주소를 선택
+              addr = data.roadAddress;
+          } else { // 지번 주소를 선택
+              addr = data.jibunAddress;
+          }
+
+          if(data.userSelectedType === 'R'){
+              if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                  extraAddr += data.bname;
+              }
+              if(data.buildingName !== '' && data.apartment === 'Y'){
+                  extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+              }
+              if(extraAddr !== ''){
+                  extraAddr = ' (' + extraAddr + ')';
+              }
+          } else {
+              document.getElementById("UserAdd1").value = '';
+          }
+
+          // 선택된 우편번호와 주소 정보를 input 박스에 넣는다.
+          document.getElementById('zipp_code_id').value = data.zonecode;
+          document.getElementById("UserAdd1").value = addr;
+          document.getElementById("UserAdd1").value += extraAddr;
+          document.getElementById("UserAdd2").focus(); // 우편번호 + 주소 입력이 완료되었음으로 상세주소로 포커스 이동
+      }
+  }).open();
+}
