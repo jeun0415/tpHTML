@@ -61,16 +61,16 @@
   box-shadow: 0 0 8px hsla(44, 94%, 50%, 0.979);
 }
 
-#zipp_code_id{
-  width: 200px;
+#zipp_code_id {
+  width: 150px;
 }
 
-#UserAdd1{
+#UserAdd1 {
   margin-top: 10px;
   width: 600px;
 }
 
-#UserAdd2{
+#UserAdd2 {
   margin-top: 10px;
   width: 600px;
 }
@@ -333,6 +333,6 @@ h1 {
   display: inline;
 }
 
-#zipp_btn{
+#zipp_btn {
   cursor: pointer;
 }
