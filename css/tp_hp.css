@@ -218,6 +218,28 @@
 }
 .s-content {
   padding: 20px;
+  margin-bottom: 40px;
+}
+
+.marketfind{
+  width: 940px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.mftext{
+  text-align: center;
+  position: absolute;
+  top: 36%;
+  left: 14%;
+  color: white;
+}
+
+.mftext input{
+  width: 200px;
+  height: 25px;
+  border: none;
+  border-radius: 10px;
 }
 
 .s-upimg{
@@ -226,7 +248,7 @@
   text-align: center;
   position: fixed;
   bottom: 40px;
-  right: 400px;
+  right: 204px;
   border: solid 1px rgb(255, 180, 41);
 }
 
@@ -278,4 +300,17 @@
   font-family: 'LOTTERIACHAB';
   font-weight: normal;
   font-style: normal;
+}
+
+.final{
+  text-align: center;
+}
+
+.final li{
+  display: inline;
+}
+
+.final a{
+  text-decoration-line: none;
+  color: black;
 }
