@@ -28,16 +28,16 @@
   top: 80px;
 }
 
-.s-logoclick {
-  cursor: pointer;
-}
-
 .s-logoimg {
   width: 150px;
   height: 100px;
   position: absolute;
   right: 46%;
   top: 10px;
+}
+
+.s-logoclick {
+  cursor: pointer;
 }
 
 .s-nav {
@@ -124,6 +124,26 @@
 
 .s-prev:hover, .s-next:hover{
   background-color: rgba(255, 180, 41, 0.3);
+}
+
+.s-submenu1{
+  height: 300px;
+  width: 250px;
+  border: solid 2px rgb(255, 180, 41);
+  position: fixed;
+  top: 262px;
+  right: 80px;
+  border-radius: 30px;
+}
+
+.s-submenu2{
+  height: 200px;
+  width: 250px;
+  border: solid 2px rgb(255, 180, 41);
+  position: fixed;
+  top: 600px;
+  right: 80px;
+  border-radius: 30px;
 }
 
 .s-content {
