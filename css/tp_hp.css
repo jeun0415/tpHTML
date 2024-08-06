@@ -28,6 +28,10 @@
   top: 80px;
 }
 
+.s-logoclick {
+  cursor: pointer;
+}
+
 .s-logoimg {
   width: 150px;
   height: 100px;
