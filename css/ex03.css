@@ -63,7 +63,48 @@
 
 #zipp_code_id {
   width: 150px;
+  height: 25px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 14px;
 }
+
+.c-bn1 {
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 100px;
+  color: hwb(0 29% 71%);
+  background-color: hsl(42, 92%, 90%);
+  font-size: 12pt;
+  padding: 20px;
+  font-weight: 600;
+}
+
+.c-bn1:hover{
+  background-color: hwb(24 8% 0%);
+  color: white;
+}
+
+.c-bn2 {
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 11pt;
+  background-color: hsl(42, 92%, 90%);
+  padding: 3px 5px 3px 4px;
+  border: solid 1px #ccc;
+}
+
+.c-bn2:hover{
+  background-color: hwb(24 8% 0%);
+  color: white;
+  border: solid 1px hwb(24 8% 0%);
+}
+
+
+/* .c-addnum{
+  align-items: center;
+} */
 
 #UserAdd1 {
   margin-top: 10px;
@@ -250,7 +291,7 @@ span {
   padding: 0.8rem 3rem;
   margin-right: 5rem;
   cursor: pointer;
-  border-radius: 17px;
+  border-radius: 100px;
   border: none;
 }
 
@@ -269,10 +310,6 @@ span {
 
 #c-lb2 {
   background-color: #ccc;
-}
-
-.c-bn {
-  cursor: pointer;
 }
 
 .c-top1 {
