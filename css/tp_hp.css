@@ -93,7 +93,7 @@
   max-width: 940px;
   height: 700px;
   position: relative;
-  margin: 50px auto;
+  margin: 50px auto 30px auto;
   border: solid 2px rgb(255, 180, 41);
   border-radius: 30px;
 }
@@ -148,6 +148,28 @@
 
 .s-content {
   padding: 20px;
+  margin-bottom: 20px;
+}
+
+.marketfind{
+  width: 940px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.mftext{
+  text-align: center;
+  position: absolute;
+  top: 36%;
+  left: 14%;
+  color: white;
+}
+
+.mftext input{
+  width: 200px;
+  height: 25px;
+  border: none;
+  border-radius: 10px;
 }
 
 .s-upimg{
@@ -156,7 +178,7 @@
   text-align: center;
   position: fixed;
   bottom: 40px;
-  right: 400px;
+  right: 178px;
   border: solid 1px rgb(255, 180, 41);
 }
 
@@ -172,4 +194,17 @@
   width: 100%;
   height: 100px;
   bottom: 0;
+}
+
+.final{
+  text-align: center;
+}
+
+.final li{
+  display: inline;
+}
+
+.final a{
+  text-decoration-line: none;
+  color: black;
 }
