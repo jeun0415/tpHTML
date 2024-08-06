@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
-
+@import url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIACHAB.woff2');
 *{
     padding: 0;
     margin: 0;
     font-family: "Noto Sans KR", sans-serif;
+
 }
 .t-order-box-main ul{
 display: flex;
@@ -203,10 +204,10 @@ margin: auto;
 }
 .t-logo{
     position: absolute;
-    border: 6px double white;
+    border: 6px outset white;
     border-radius: 20px;
     margin-top: 20px;
-    margin-left: 1100px;
+    margin-left: 1150px;
     padding: 10px; 
     display: flex;
     flex-direction: column;
@@ -214,6 +215,8 @@ margin: auto;
     justify-content: center;
     width: 70px;
     height: 70px;
+    transform: rotate(10deg);
+    box-shadow: -2px -2px 8px white;
 
 }
 .t-logo-text {
@@ -223,4 +226,19 @@ margin: auto;
     text-align: center;
     text-shadow: 3px 3px 5px darkgrey
 }
+<<<<<<< HEAD
 >>>>>>> cew
+=======
+.t-logo-eng{
+    z-index: 50;
+    text-shadow: 5px 5px 5px darkgray;
+    padding-right: 15px;
+
+}
+
+.t-logo-text h1{
+        font-family: 'LOTTERIACHAB';
+        font-weight: normal;
+        font-style: normal;
+}
+>>>>>>> main
