@@ -18,7 +18,7 @@
   height: 90px;
   padding-top: 40px;
   text-align: center;
-  background-color: rgb(248, 204, 129);
+  background-color: hsl(38, 85%, 87%);
 }
 
 .s-header h1 {
@@ -43,11 +43,13 @@
 }
 
 .s-nav {
+  
   display: flex;
   justify-content: center;
-  padding: 10px 0;
-  border-top: solid 2px rgb(255, 180, 41);
-  border-bottom: solid 2px rgb(255, 180, 41);
+  padding: 5px 0;
+  /* border-top: solid 2px rgb(255, 180, 41); */
+  /* border-bottom: solid 2px rgb(255, 180, 41); */
+  background-color: rgb(248, 204, 129);
 }
 
 .s-nav a {
@@ -57,12 +59,16 @@
   width: 70px;
   text-decoration: none;
   text-align: center;
-  border: solid 3px rgb(255, 180, 41);
-  border-radius: 17px;
+  border-left: solid 1px rgb(255, 180, 41);
+  border-right: solid 1px rgb(255, 180, 41);
+  /* border: solid 3px rgb(255, 180, 41); */
+  /* border-radius: 17px; */
+  background-color: rgb(248, 204, 129);
 }
 
 .s-nav a:hover {
   background-color: rgb(255, 180, 41);
+  border-radius: 17px;
 }
 
 .s-search-div{
@@ -134,13 +140,13 @@
   padding-top: 10px;
   height: 200px;
   width: 300px;
-  border: solid 2px rgb(255, 180, 41);
+  /* border: solid 2px rgb(255, 180, 41); */
   position: fixed;
   top: 262px;
   right: 80px;
   border-radius: 30px;
   color: #57585a;
-  
+  background-color: #fff3e1;
 }
 
 .s-submenu2 ul li{
@@ -150,8 +156,8 @@
 .s-submenu2{
   height: 330px;
   width: 300px;
-  border: solid 2px rgb(255, 180, 41);
-  background-color: white;
+  /* border: solid 2px rgb(255, 180, 41); */
+  background-color: #fff3e1;
   position: fixed;
   top: 500px;
   right: 80px;
@@ -161,18 +167,20 @@
   color: #57585a;
 }
 .s-submenu-q{
-  background-color: rgb(255, 180, 41);
-  border: solid 1px rgb(255, 180, 41) ;
+  background-color: #ffb4299f;
+  /* border: solid 1px rgb(255, 180, 41) ; */
   border-radius: 30px;
   padding: 10px;
   margin-left: 20px;
   margin-right: 20px;
   cursor: pointer;
   font-size: 15pt;
+  box-shadow: 2px 2px 1px 1px rgb(233, 233, 233);
 }
 .s-submenu-q1{
-  background-color: rgb(255, 180, 41);
-  border: solid 1px rgb(255, 180, 41) ;
+  background-color: #ffb4299f;
+  box-shadow: 2px 2px 1px 1px rgb(233, 233, 233);
+  /* border: solid 1px rgb(255, 180, 41) ; */
   border-radius: 30px;
   margin-left: 30px;
   margin-right: 30px;
@@ -198,8 +206,9 @@
 .s-submenu-q4{
   font-size: 15pt;
   text-align: center;
-  background-color: rgb(255, 180, 41);
-  border: solid 1px rgb(255, 180, 41);
+  background-color: #ffb4299f;
+  box-shadow: 2px 2px 1px 1px rgb(233, 233, 233);
+  /* border: solid 1px rgb(255, 180, 41); */
   border-radius: 30px;
   margin: 5px;
   cursor: pointer;
