@@ -53,6 +53,7 @@
   font-size: 16px;
   outline: none;
   resize: none;
+  text-align: center;
 }
 
 .c-input:focus {
@@ -148,7 +149,7 @@
 }
 
 .c-line1 {
-  background-color: rgb(253, 245, 226);
+  background-color: hsl(42, 92%, 90%);
   border-radius: 10px;
   width: 500px;
   display: inline;
