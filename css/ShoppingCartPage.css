@@ -194,23 +194,7 @@ cursor: pointer;
     background-repeat: no-repeat;
     background-position: center;
 }
-.t-logo{
-    position: absolute;
-    border: 6px outset white;
-    border-radius: 20px;
-    margin-top: 20px;
-    margin-left: 1150px;
-    padding: 10px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 70px;
-    height: 70px;
-    transform: rotate(10deg);
-    box-shadow: -2px -2px 8px white;
 
-}
 .t-logo-text {
     display: flex;
     width: 120%;
