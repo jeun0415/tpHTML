@@ -112,6 +112,11 @@ margin: auto;
     background-color: hwb(24 8% 0%); /* 배경색 설정 */
 
 }
+#deselect-all:hover{
+background-color: #FFB429;
+color: white;
+cursor: pointer;
+}
 .t-caution {
     margin: 20px auto;
     width: 90%;
