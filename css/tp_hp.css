@@ -62,8 +62,8 @@
 }
 
 .s-nav a:hover {
-  background-color: hsla(0, 0%, 100%, 0.863);
-  padding: 2px 2px;
+  background-color: rgb(255, 180, 41);
+  padding: 2px;
   border-radius: 100px;
 }
 
@@ -192,7 +192,6 @@
   border: dotted 1px rgb(255, 180, 41);
   margin-left: 20px;
   margin-right: 20px;
-  cursor: pointer;
   font-size: 11pt;
 }
 
@@ -200,7 +199,6 @@
   border: dotted 1px rgb(255, 180, 41);
   margin-left: 20px;
   margin-right: 20px;
-  cursor: pointer;
   font-size: 13pt;
   text-align: center;
   margin-bottom: 15px;
@@ -217,6 +215,11 @@
   cursor: pointer;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.s-submenu-q4 a{
+  text-decoration: none;
+  color: inherit;
 }
 
 .s-submenu-q5 {
@@ -335,10 +338,4 @@
 .final a {
   text-decoration-line: none;
   color: black;
-}
-
-.black-han-sans-regular {
-  font-family: "Black Han Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
