@@ -40,13 +40,13 @@
 }
 
 .s-nav {
-  border-top: solid 4px #fff;
+  border-top: solid 2px #fff;
   display: flex;
   justify-content: center;
   padding: 5px 0;
   /* border-top: solid 2px rgb(255, 180, 41); */
   /* border-bottom: solid 2px rgb(255, 180, 41); */
-  background-color: hwb(39 28% 1%);
+  background-color: hwb(29 17% 17%);
 }
 
 .s-nav a {
@@ -56,7 +56,9 @@
   width: 70px;
   text-decoration: none;
   text-align: center;
-  background-color: hwb(39 28% 1%);
+  background-color: hwb(29 17% 17%);
+  color: white;
+  text-shadow: 2px 2px 1px hwb(180 47% 52%);
 }
 
 .s-nav a:hover {
@@ -276,7 +278,7 @@
 }
 
 .s-footer {
-  border-top: solid 4px hwb(39 28% 1%);
+  border-top: solid 2px hwb(39 28% 1%);
   /* position: fixed; */
   padding: 10px 0;
   width: 100%;
@@ -317,8 +319,8 @@
 }
 
 .t-logo-text h1 {
-  font-family: 'LOTTERIACHAB';
-  font-weight: normal;
+  /* font-family: 'LOTTERIACHAB'; */
+  font-weight: 1000;
   font-style: normal;
 }
 
@@ -333,4 +335,10 @@
 .final a {
   text-decoration-line: none;
   color: black;
+}
+
+.black-han-sans-regular {
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
