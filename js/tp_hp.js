@@ -32,5 +32,5 @@ let slideIndex = 1;
             autoSlideIndex++;
             if(autoSlideIndex > autoSlides.length) {autoSlideIndex = 1}
             autoSlides[autoSlideIndex-1].style.display = "block";
-            setTimeout(showAutoSlides, 3000);
+            setTimeout(showAutoSlides, 5000);
         }
