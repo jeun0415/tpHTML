@@ -38,7 +38,16 @@
   top: 10px;
   cursor: pointer;
 }
-
+.s-logoimg:hover {
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  right: 46%;
+  top: 10px;
+  cursor: pointer;
+  transform: translate(-300px);
+  transition: 3s;
+}
 .s-nav {
   border-top: solid 2px #fff;
   display: flex;
