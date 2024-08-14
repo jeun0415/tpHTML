@@ -46,7 +46,7 @@
   top: 10px;
   cursor: pointer;
   transform: translate(-300px);
-  transition: 3s;
+  transition: 2.5s;
 }
 .s-nav {
   border-top: solid 2px #fff;
