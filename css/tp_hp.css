@@ -48,6 +48,15 @@
   transform: translate(-300px);
   transition: 3s;
 }
+.snsimg{
+  position: absolute;
+  top: 40px;
+  left: 300px;
+}
+.snsimg li{
+  display: inline;
+  margin: 0 10px;
+}
 .s-nav {
   border-top: solid 2px #fff;
   display: flex;
@@ -80,7 +89,7 @@
   position: absolute;
   padding: 5px;
   width: 4.6rem;
-  right: 150px;
+  right: 260px;
   top: 50px;
   display: flex;
 }
