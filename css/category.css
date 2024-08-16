@@ -142,6 +142,42 @@
   margin-left: 0;
 }
 
+.k-over {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0;
+  z-index: 20;
+  transition-duration: 0.5s;
+}
+
+.k-over .k-desc {
+  display: block;
+  margin: 160px 20px 30px 20px;
+  font-size: 14px;
+  color: #6e635c;
+  text-align: center;
+  line-height: 22px;
+}
+
+.k-over .k-desc a {
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.k-over .k-btn_more2 {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50px;
+  z-index: 10;
+}
+
 .recommended_left_area ::after {
   content: "";
   display: inline-block;

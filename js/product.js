@@ -5,6 +5,7 @@ const productsData = {
       image: "../img/bread/1.jpg",
       description: "건강 통밀 그대로",
       kind: "Bread",
+      url: "../html/productDetail.html",
     },
     {
       name: "무화과 깜빠뉴",
@@ -69,7 +70,7 @@ const productsData = {
       image: "../img/cake/1.jpg",
       description: "짜지 않는 고소함",
       kind: "Cake",
-      new: "item_new"
+      new: "item_new",
     },
     {
       name: "시나몬 과일 케이크",
@@ -436,7 +437,7 @@ export function renderRecommendedProducts(categoryId) {
 }
 
 export function renderProducts(categoryId) {
-      /*
+  /*
         product DOM structure
 
         li
@@ -448,14 +449,16 @@ export function renderProducts(categoryId) {
         ------ span         .txt_shape
         ------ span         .item_new
     */
-  
+
   // 기존 컨텐츠 지우기
   eraseProducts(productRender);
 
   const products = productsData[categoryId];
 
-    // 템플릿 리터럴 사용하여 HTML 생성
-    const productHTML = products.map(product => `
+  // 템플릿 리터럴 사용하여 HTML 생성
+  const productHTML = products
+    .map(
+      (product) => `
       <li class="item">
         <a class="item_best">
           <span class="item_text">${product.name}</span>
@@ -463,11 +466,21 @@ export function renderProducts(categoryId) {
           <span class="item_info">
             <span class="name">${product.description}</span>
             <span class="txt_shape">${product.kind}</span>
-            ${product.new ? `<span class="${product.new}"></span>` : ''}
+            ${product.new ? `<span class="${product.new}"></span>` : ""}
           </span>
         </a>
+        <span class="k-over">
+          <span class="k-desc">
+            <a href="#"></a>
+          </span>
+          <span class="k-btn_more2">
+            <a href="${product.url}" class="">MORE</a>
+          </span>
+        </span>
       </li>
-    `).join('');
+    `
+    )
+    .join("");
 
   // DOM에 한 번에 추가
   productRender.innerHTML = productHTML;
@@ -498,7 +511,9 @@ function doTextSlice(element, maxWidth) {
 function drawRecommendedProducts(renderProduct, productsData, categoryId) {
   const products = productsData[categoryId];
 
-  const recommendedProductsHTML = products.map(product => `
+  const recommendedProductsHTML = products
+    .map(
+      (product) => `
     <li class="recommended_item_wrap">
       <a href="#"> <span class="img">
           <img src="${product.image}" alt="${product.name}">
@@ -508,9 +523,19 @@ function drawRecommendedProducts(renderProduct, productsData, categoryId) {
           <span class="txt_shape">${product.kind}</span>
         </span>
       </a>
+      <span class="k-over">
+        <span class="k-desc">
+          <a href="#"></a>
+        </span>
+        <span class="k-btn_more2">
+          <a href="#" class="k-more-btn">MORE</a>
+        </span>
+      </span>
     </li>
-  `).join('');
-  
+  `
+    )
+    .join("");
+
   renderProduct.innerHTML = recommendedProductsHTML;
 }
 
@@ -518,4 +543,29 @@ function eraseProducts(parent) {
   while (parent.firstChild) {
     parent.removeChild(parent.firstChild);
   }
+}
+
+export function showMoreContent() {
+  const itemWraps = document.querySelectorAll(".item");
+
+  itemWraps.forEach((item) => {
+    item.addEventListener("mouseover", () => {
+      const img = item.querySelector(".item_img");
+      const kOver = item.querySelector(".k-over");
+
+      img.style.opacity = "0.95"; // 이미지의 불투명도를 낮춤
+      kOver.style.display = "block"; // 텍스트와 버튼을 포함한 오버레이 보이기
+      setTimeout(() => (kOver.style.opacity = "0.95"), 10); // 오버레이의 불투명도를 높임
+    });
+  });
+
+  itemWraps.forEach((item) => {
+    item.addEventListener("mouseout", () => {
+      const img = item.querySelector(".item_img");
+      const kOver = item.querySelector(".k-over");
+
+      img.style.opacity = "1"; // 이미지의 불투명도를 원래대로 복원
+      kOver.style.opacity = "0"; // 오버레이의 불투명도를 낮춤
+    });
+  });
 }

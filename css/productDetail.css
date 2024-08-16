@@ -1,0 +1,219 @@
+#content {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.product.b_fff {
+  padding: 20px;
+}
+
+.product_detail {
+  display: inline-block;
+  width: 100%;
+}
+
+.product_detail.box_type1 {
+  margin-bottom: 40px;
+}
+
+.product_detail.box_type1 > ul {
+  display: inline-block;
+  position: relative;
+  width: 952px;
+  padding: 0;
+}
+
+.box_type1 > ul {
+  border: 4px double #e8e6e2;
+}
+
+.product_detail .left_area {
+  float: left;
+  width: 372px;
+  margin: 0 50px;
+}
+
+.product_detail .right_area {
+  float: right;
+  width: 306px;
+  margin: 32px 0 34px 0;
+  padding: 0 80px;
+  text-align: left;
+}
+
+.product_detail.box_type1 > ul::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5%;
+  left: 485px;
+  width: 1px;
+  height: 90%;
+  background-color: #ebe8e0;
+}
+
+.product_detail .left_area .item_wrap {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin: 0 0 0 0;
+}
+
+.product_detail .left_area .item_wrap .img {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 45px 0 5px 0;
+  text-align: center;
+}
+
+.product_detail .left_area .k-desc1 {
+  margin-bottom: 10px;
+  font-size: 11px;
+  text-align: left;
+}
+
+.product_detail .left_area .k-desc2 {
+  margin-bottom: 50px;
+  background: #f0f0f0;
+  color: #655245;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.product_detail .left_area .p_desc2 ul {
+  padding: 25px 45px;
+}
+
+.product_detail .left_area .p_desc2 .tit {
+  /* display: inline-block; */
+  width: 273px;
+  height: 13px;
+  margin-bottom: 14px;
+  font-size: 0;
+  overflow: hidden;
+}
+
+/* right area */
+.product_detail .right_area {
+  float: right;
+  width: 306px;
+  margin: 32px 0 34px 0;
+  padding: 0 80px;
+  text-align: left;
+}
+
+.product_detail .right_area > .info {
+  clear: both;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0 14px 0;
+  text-align: center;
+}
+
+.product_detail .right_area > .info .name {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.table_nutrition {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.table_nutrition table {
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: none;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.table_nutrition table thead th {
+  width: 110px;
+  padding-top: 22px;
+  border-bottom: 1px solid #ccc;
+  font-size: 15px;
+  font-weight: 700;
+  text-indent: 30px;
+  vertical-align: top;
+}
+
+.table_nutrition table thead td {
+  border-bottom: 1px solid #ccc;
+  text-align: right;
+  padding: 10px 0;
+  font-size: 12px;
+}
+
+.table_nutrition table tbody .is-allergy td {
+  padding-top: 12px;
+  border-top: 1px solid #ccc;
+}
+
+.table_nutrition table tbody .last {
+  padding-bottom: 12px;
+}
+
+th,
+td {
+  text-align: left;
+  vertical-align: middle;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.table_nutrition table tbody .first {
+  padding-top: 12px;
+}
+
+.table_nutrition table tbody th {
+  width: 130px;
+  font-size: 13px;
+  text-indent: 30px;
+}
+.table_nutrition table tbody td {
+  padding: 10px 0;
+  font-size: 12px;
+  text-align: right;
+}
+
+.product_detail .right_area .btn-area {
+  margin: 28px 0 0 0;
+  text-align: center;
+}
+
+.product_detail .right_area .btn-area .btn {
+  min-width: auto;
+  padding: 0;
+  width: 100px;
+}
+
+.btn.st8 {
+  color: #545454;
+  border: 1px solid #a8a8a8;
+  background-color: transparent;
+}
+.btn.large {
+  padding: 0 10px;
+  min-width: 152px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 15px;
+}
