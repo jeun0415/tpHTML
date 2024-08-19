@@ -55,7 +55,10 @@
 }
 .snsimg li{
   display: inline;
-  margin: 0 10px;
+  margin: 0 5px;
+}
+.snsimo{
+  border: solid 1px black;
 }
 .s-nav {
   border-top: solid 2px #fff;
@@ -112,7 +115,7 @@
 }
 
 .s-slide-container {
-  max-width: 940px;
+  max-width: 1165px;
   height: 760px;
   position: relative;
   margin: 10px auto;
