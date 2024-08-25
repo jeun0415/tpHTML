@@ -474,7 +474,9 @@ export function renderProducts(categoryId) {
             <a href="#"></a>
           </span>
           <span class="k-btn_more2">
-            <a href="${product.url}" class="">MORE</a>
+          <a href="#" onclick="selectProduct(event, '${product.name}', '${
+        product.image
+      }', '${product.description}', '${product.kind}')" class="">MORE</a>
           </span>
         </span>
       </li>
@@ -569,3 +571,19 @@ export function showMoreContent() {
     });
   });
 }
+
+function selectProduct(event, name, img, desc, kind) {
+  event.preventDefault();
+  const selectProduct = {
+    name: name,
+    img: img,
+    desc: desc,
+    kind: kind,
+  };
+
+  sessionStorage.setItem("selectProduct", JSON.stringify(selectProduct));
+
+  window.location.href = "../html/productDetail.html";
+}
+
+window.selectProduct = selectProduct;
