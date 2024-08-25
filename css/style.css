@@ -74,29 +74,33 @@ nav {
   display: flex;
   justify-content: center;
   padding: 10px 0;
-  border-top: solid 2px rgb(255, 180, 41);
-  border-bottom: solid 2px rgb(255, 180, 41);
+  /* border-top: solid 2px rgb(255, 180, 41); */
+  /* border-bottom: solid 2px rgb(255, 180, 41); */
 }
 
 nav a {
   color: black;
-  padding: 15px 60px;
-  margin: 0 20px;
-  /* width: 70px; */
+  padding: 2px 2px;
+  margin: 8px 78px;
+  width: 70px;
   text-decoration: none;
   text-align: center;
-  border: solid 3px rgb(255, 180, 41);
-  border-radius: 17px;
+  background-color: hwb(29 17% 17%);
+  color: white;
+  text-shadow: 2px 2px 1px hwb(180 47% 52%);
 }
 
 nav a:hover {
   background-color: rgb(255, 180, 41);
+  padding: 2px;
+  border-radius: 100px;
 }
 
 .search-div {
   position: absolute;
   padding: 5px;
   width: 4.6rem;
-  right: 280px;
-  top: 25px;
+  right: 150px;
+  top: 50px;
+  display: flex;
 }

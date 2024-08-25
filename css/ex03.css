@@ -53,6 +53,7 @@
   font-size: 16px;
   outline: none;
   resize: none;
+  text-align: center;
 }
 
 .c-input:focus {
@@ -78,6 +79,7 @@
   font-size: 12pt;
   padding: 20px;
   font-weight: 600;
+  box-shadow: 2px 2px 1px 1px rgb(233, 233, 233);
 }
 
 .c-bn1:hover{
@@ -93,6 +95,7 @@
   background-color: hsl(42, 92%, 90%);
   padding: 3px 5px 3px 4px;
   border: solid 1px #ccc;
+  box-shadow: 1px 1px 1px 1px hwb(0 94% 6%);
 }
 
 .c-bn2:hover{
@@ -138,6 +141,7 @@
 .c-a2.on {
   background-color: hwb(24 8% 0%);
   color: white;
+  text-decoration: underline;
 }
 
 .c-way {
@@ -145,7 +149,7 @@
 }
 
 .c-line1 {
-  background-color: rgb(253, 245, 226);
+  background-color: hsl(42, 92%, 90%);
   border-radius: 10px;
   width: 500px;
   display: inline;
@@ -283,7 +287,7 @@ span {
 .c-btn {
   display: flex;
   justify-content: center;
-  margin: 100px 0 100px 0;
+  margin: 100px 0 100px 100px;
 }
 
 .c-btn>.c-btnip {
@@ -301,15 +305,22 @@ span {
 
 #c-lb1 {
   background-color: orange;
+  box-shadow: 2px 2px 1px 1px #dbdbdb;
 }
 
-#c-lb1:active {
+#c-lb1:hover {
   background-color: hwb(24 8% 0%);
   color: white;
 }
 
+#c-lb2:hover {
+  background-color: hsl(0, 0%, 64%);
+  color: black;
+}
+
 #c-lb2 {
   background-color: #ccc;
+  box-shadow: 2px 2px 1px 1px #dbdbdb;
 }
 
 .c-top1 {
