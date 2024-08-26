@@ -51,15 +51,33 @@
 .snsimg{
   position: absolute;
   top: 40px;
-  left: 300px;
+  left: 180px;
 }
 .snsimg li{
   display: inline;
-  margin: 0 5px;
+  margin: 0 15px;
 }
 .snsimo{
   border: solid 1px black;
 }
+
+.logincontents{
+  position: absolute;
+  top: 53px;
+  right: 260px;
+  font-size: 1.2rem;
+}
+
+.logincontents li{
+  list-style: none;
+  display: inline;
+  margin: 0 20px;
+}
+
+.loginbtn{
+  border: solid 1px white;
+}
+
 .s-nav {
   border-top: solid 2px #fff;
   display: flex;
@@ -93,7 +111,7 @@
   padding: 5px;
   width: 4.6rem;
   right: 260px;
-  top: 50px;
+  top: 142px;
   display: flex;
 }
 
