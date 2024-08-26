@@ -25,7 +25,7 @@ li.item {
 }
 
 /* 제일 안쪽 a태그에서 길이를 주면(inline-block) 꽉차게 됨 */
-.item > a {
+.item a {
     color: black;
     /* text-shadow: 1px 1px 0px #011200; 가로 세로 거리, 번짐 정도, 색상 지정 */
     box-shadow: 2px 2px 8px 2px rgba(255, 180, 41, 0.9); /* 수평 거리, 수직 거리, 흐림 정도, 번짐 정도, 색상 */

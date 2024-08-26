@@ -25,6 +25,7 @@ function focusAfterClick(event) {
   product.renderRecommendedProducts(categoryId);
   product.renderProducts(categoryId);
   scrollToProducts();
+  product.showMoreContent();
 }
 
 for (let i = 0; i < categoryMenusList.length; i++) {
@@ -39,3 +40,5 @@ function scrollToProducts() {
   const top = element.offsetTop - 50; // 요소의 상단 좌표
   window.scrollTo({ top: top, behavior: "smooth" });
 }
+
+product.showMoreContent();
