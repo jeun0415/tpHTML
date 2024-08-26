@@ -48,6 +48,36 @@
   transform: translate(-300px);
   transition: 2.5s;
 }
+.snsimg{
+  position: absolute;
+  top: 40px;
+  left: 180px;
+}
+.snsimg li{
+  display: inline;
+  margin: 0 15px;
+}
+.snsimo{
+  border: solid 1px black;
+}
+
+.logincontents{
+  position: absolute;
+  top: 53px;
+  right: 260px;
+  font-size: 1.2rem;
+}
+
+.logincontents li{
+  list-style: none;
+  display: inline;
+  margin: 0 20px;
+}
+
+.loginbtn{
+  border: solid 1px white;
+}
+
 .s-nav {
   border-top: solid 2px #fff;
   display: flex;
@@ -80,8 +110,8 @@
   position: absolute;
   padding: 5px;
   width: 4.6rem;
-  right: 150px;
-  top: 50px;
+  right: 260px;
+  top: 142px;
   display: flex;
 }
 
@@ -103,7 +133,7 @@
 }
 
 .s-slide-container {
-  max-width: 940px;
+  max-width: 1165px;
   height: 760px;
   position: relative;
   margin: 10px auto;
