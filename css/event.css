@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+    height: 100%;
+  }
+
+.c-ebody{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    position: relative;
+    padding: 50px 0;
+}
+
+.c-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 170px;
+}
+
+.t-square-box {
+    width: 10px; /* 네모 상자의 너비 */
+    height: 25px; /* 네모 상자의 높이 */
+    background-color: #FFB429; /* 상자 색상 (노란색) */
+    margin-right: 10px; /* 상자와 텍스트 사이의 간격 */
+}
+
+.c-header p {
+    margin: 0;
+  }
+
+.c-boxes{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.c-box{
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.c-boxes > div{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.c-boxes > div img{
+    width: 271px;
+    height: 140px;
+    object-fit: cover;
+}
+
+.c-boxes > div img:hover{
+    filter: brightness(70%);
+}
+
+.c-boxes > span{
+    display: flex;
+    justify-content: center;
+}
+
+.c-bline1, .c-bline2, .c-bline3{
+    display: flex;
+    justify-content: center
+}
