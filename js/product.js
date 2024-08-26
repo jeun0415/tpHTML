@@ -471,7 +471,7 @@ export function renderProducts(categoryId) {
         </a>
         <span class="k-over">
           <span class="k-desc">
-            <a href="#"></a>
+            <a href="../html/ShoppingCartPage.html">장바구니 담기</a>
           </span>
           <span class="k-btn_more2">
           <a href="#" onclick="selectProduct(event, '${product.name}', '${
